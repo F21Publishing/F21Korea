@@ -1,0 +1,707 @@
+
+html {
+	 font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-size-adjust: 100%
+    font-size: 100%;
+    font-weight: normal
+}
+
+body {
+    font-weight: normal;
+    -webkit-tap-highlight-color: transparent
+}
+
+b, strong {
+    font-weight: bold
+}
+
+dfn {
+    font-style: italic
+}
+
+td,
+th {
+    padding: 0
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+figcaption {
+    font-size: .9em;
+    padding: 1em
+}
+
+.owl-buttons .owl-next, .owl-buttons .owl-prev {
+    background: none
+}
+
+.btn_wrapper a {
+    padding: 0 1em 0 0
+}
+
+/* app */
+.f21app #header_nav.typepdp .displayname {
+    height: 45px;
+}
+
+.f21app #header_nav.typepdp .icon_e_prev_arrow {
+    left: 0px;
+    top: 0px;
+    width: 45px;
+    height: 45px;
+}
+
+.f21app #header_nav.typepdp .icon_e_prev_arrow:before {
+    left: 20px;
+    top: 13px;
+}
+
+.f21app #header_nav.typepdp .icon_e_prev_arrow:after {
+    left: 20px;
+    top: 20px;
+}
+
+.f21app .seo#product_displayname {
+    padding: 1em 0 1em 0
+}
+
+.f21app #pdp_zoom .item_color {
+    top: 60px;
+}
+
+.f21app .pdp_info {
+    top: 60px;
+}
+
+/* Header */
+header, main, #main,
+.left_footer {
+    display: block;
+    width: 100%;
+    float: left;
+    position: relative
+}
+
+header {
+    font-size: .9em
+}
+
+header a:focus {
+    text-decoration: none
+}
+#header_nav {
+    display: block;
+    float: left;
+}
+
+h1#f21_logo {
+    width: 100%;
+    text-align: left;
+    padding: 12px 0 0 12px
+}
+
+.homepage .pre_header.right {
+    width: 70%
+}
+
+.homepage .new_header>div {
+    display: inline-block
+}
+
+.homepage .new_header>div:last-child {
+    width: 83%;
+    border: 1px solid #111;
+    float: right;
+    margin-right: 11px
+}
+
+.homepage .new_header>div {
+    float: left;
+}
+
+.homepage input[type="text"] {
+    float: left;
+}
+@media only screen and (max-width: 480px) {
+    .homepage .new_header>div:last-child {
+        width: 80%;
+    }
+}
+@media only screen and (max-width:359px) {
+    .homepage .f21logo {
+        width: 110px
+    }
+
+    .homepage .new_header>div:last-child {
+        width: 75%;
+    }
+}
+/* Main */
+.main_product_grid h2 {
+    text-align: center;
+    margin: 5% 0;
+}
+
+#m1_banner .owl-pagination {
+    top: auto;
+    bottom: 20px;
+    left: auto;
+    right: auto;
+    width: 100%;
+    text-align: center
+}
+
+.main_product_grid .owl-pagination {
+    top: auto;
+    bottom: 0px;
+    left: auto;
+    right: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.main_product_grid .owl-wrapper-outer {
+    margin-bottom: 5%
+}
+
+/* Product */
+.item_info {
+    padding: .5em 0 0 0;
+    width: 80%;
+}
+
+.item_info {
+    padding: 10px 0 0 0;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal
+}
+
+/* Slide */
+.owl-pagination {
+  top: .7em;
+  right: 1em;
+}
+
+/* Category Filter */
+.c_sort .dropdown {
+    border-bottom: 0;
+    padding: 0
+}
+
+.c_sort .dropdown dt {
+    border: 0;
+    background: 0;
+    text-transform: capitalize;
+    padding: 0
+}
+
+.c_sort .dropdown span {
+    font-weight: normal;
+    font-size: 14px;
+    text-decoration: underline
+}
+
+.c_sort .dropdown ul {
+    text-align: left;
+    left: 0;
+    top: 5px;
+    width: auto;
+    max-height: none
+}
+
+/* Asia only */
+
+#header_nav.typepdp {
+    padding-bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#header_nav.typepdp #divHeader .pdp_header {
+    overflow: hidden;
+    height: 45px;
+    background: #fff;
+}
+
+#header_nav.typepdp #f21_logo {
+    text-align: left;
+    margin: 2px 0 0 50px;
+}
+
+#header_nav.typepdp .displayname {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    clear: both;
+    padding-bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#header_nav.typepdp .prev_arrow {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 5;
+}
+
+#header_nav.typepdp .icon_e_prev_arrow {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    width: 40px;
+    height: 30px;
+    margin-left: 0;
+    background: none;
+}
+
+#header_nav.typepdp .icon_e_prev_arrow a {
+    display: block
+}
+
+#header_nav.typepdp .icon_e_prev_arrow:before {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 10px;
+    background: #fff;
+    position: absolute;
+    left: 20px;
+    top: 7px;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    -moz-transform: rotate3d(0, 0, 1, 45deg);
+    -ms-transform: rotate3d(0, 0, 1, 45deg);
+    -o-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+}
+
+#header_nav.typepdp .icon_e_prev_arrow:after {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 10px;
+    background: #fff;
+    position: absolute;
+    left: 20px;
+    top: 14px;
+    -webkit-transform: rotate3d(0, 0, 1, 135deg);
+    -moz-transform: rotate3d(0, 0, 1, 135deg);
+    -ms-transform: rotate3d(0, 0, 1, 135deg);
+    -o-transform: rotate3d(0, 0, 1, 135deg);
+    transform: rotate3d(0, 0, 1, 135deg);
+}
+
+/* Slider */
+.owl-theme .owl-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: 0px; 
+    z-index: 99
+}
+.owl-dots {
+    z-index: 888;
+    position: absolute;
+    left: 0px;
+    right: 10px; 
+    bottom: 0px;
+}
+
+/* Item Gray */
+.NewItemTag5{position:absolute;right:0;bottom:0;left:0;color:#fff;font-size:0.9em;padding:2%; background:rgba(0,0,0,0.5);vertical-align:middle;letter-spacing:1px;text-align:center;z-index:3}
+
+/* color filter */
+.filter_wrapper {position:relative;}
+.item_filter>div>ul li{min-width:32%;display:inline-block;margin:.5em 0}
+.item_filter input[type="checkbox"]+label>span{display:none;}
+
+/*PINK*/
+.item_filter input[id="PINK"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 21px;  /* 체크박스의 너비를 지정 */
+  height: 21px;  /* 체크박스의 높이를 지정 */
+  line-height: 21px; /* 세로정렬을 위해 높이값과 일치 */
+  margin: -2px 5px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: pink;/*핑크*/
+  border: 1px solid #cacece;
+  border-radius : 3px;
+  box-shadow: 0px 1px 2px rgbqksda(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.item_filter input[id="PINK"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';  /* 체크표시 유니코드 사용 */
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: pink;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba
+
+(255,255,255,0.1);
+}
+/*YELLOW*/
+.item_filter input[id="YELLOW"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  margin: -2px 5px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: YELLOW;
+  border: 1px solid #cacece;
+  border-radius : 3px;
+  box-shadow: 0px 1px 2px rgbqksda(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.item_filter input[id="YELLOW"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: YELLOW;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba
+
+(255,255,255,0.1);
+}
+/*GREY*/
+.item_filter input[id="GREY"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  margin: -2px 5px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: GREY;
+  border: 1px solid #cacece;
+  border-radius : 3px;
+  box-shadow: 0px 1px 2px rgbqksda(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.item_filter input[id="GREY"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: GREY;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba
+
+(255,255,255,0.1);
+}
+/*OTHER*/
+.item_filter input[id="OTHER"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  margin: -2px 5px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: OTHER;
+  background-image:url(../images/en/Mobile/common/Other_Color.png);
+  border: 1px solid #cacece;
+  border-radius : 3px;
+  box-shadow: 0px 1px 2px rgbqksda(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.item_filter input[id="OTHER"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: OTHER;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba
+
+(255,255,255,0.1);
+}
+/*DENIM*/
+.item_filter input[id="DENIM"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  margin: -2px 5px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: #79BAEC;
+  border: 1px solid #cacece;
+  border-radius : 3px;
+  box-shadow: 0px 1px 2px rgbqksda(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.item_filter input[id="DENIM"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: #79BAEC;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba
+
+(255,255,255,0.1);
+}
+/*BROWN*/
+.item_filter input[id="BROWN"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  margin: -2px 5px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: #945323;
+  border: 1px solid #cacece;
+  border-radius : 3px;
+  box-shadow: 0px 1px 2px rgbqksda(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.item_filter input[id="BROWN"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: #945323;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba
+
+(255,255,255,0.1);
+}
+/*WHITE*/
+.item_filter input[id="WHITE"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  margin: -2px 5px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: WHITE;
+  border: 1px solid #cacece;
+  border-radius : 3px;
+  box-shadow: 0px 1px 2px rgbqksda(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.item_filter input[id="WHITE"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: WHITE;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba
+
+(255,255,255,0.1);
+}
+/*ORANGE*/
+.item_filter input[id="ORANGE"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  margin: -2px 5px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: ORANGE;
+  border: 1px solid #cacece;
+  border-radius : 3px;
+  box-shadow: 0px 1px 2px rgbqksda(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.item_filter input[id="ORANGE"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: ORANGE;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba
+
+(255,255,255,0.1);
+}
+/*RED*/
+.item_filter input[id="RED"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  margin: -2px 5px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: #d62525;
+  border: 1px solid #cacece;
+  border-radius : 3px;
+  box-shadow: 0px 1px 2px rgbqksda(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.item_filter input[id="RED"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: #d62525;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba
+
+(255,255,255,0.1);
+}
+/*TAN*/
+.item_filter input[id="TAN"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  margin: -2px 5px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: TAN;
+  border: 1px solid #cacece;
+  border-radius : 3px;
+  box-shadow: 0px 1px 2px rgbqksda(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.item_filter input[id="TAN"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: TAN;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba
+
+(255,255,255,0.1);
+}
+/*BLUE*/
+.item_filter input[id="BLUE"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  margin: -2px 5px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: BLUE;
+  border: 1px solid #cacece;
+  border-radius : 3px;
+  box-shadow: 0px 1px 2px rgbqksda(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.item_filter input[id="BLUE"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: BLUE;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba
+
+(255,255,255,0.1);
+}
+/*GREEN*/
+.item_filter input[id="GREEN"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  margin: -2px 5px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: GREEN;
+  border: 1px solid #cacece;
+  border-radius : 3px;
+  box-shadow: 0px 1px 2px rgbqksda(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.item_filter input[id="GREEN"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: GREEN;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba
+
+(255,255,255,0.1);
+}
+/*BLACK*/
+.item_filter input[id="BLACK"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  margin: -2px 5px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: BLACK;
+  border: 1px solid #cacece;
+  border-radius : 3px;
+  box-shadow: 0px 1px 2px rgbqksda(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.item_filter input[id="BLACK"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: BLACK;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba
+
+(255,255,255,0.1);
+}
+/*PURPLE*/
+.item_filter input[id="PURPLE"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  margin: -2px 5px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: PURPLE;
+  border: 1px solid #cacece;
+  border-radius : 3px;
+  box-shadow: 0px 1px 2px rgbqksda(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.item_filter input[id="PURPLE"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: PURPLE;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba
+
+(255,255,255,0.1);
+}
+.item_filter input[type="checkbox"] + label:active:before,
+.item_filter input[type="checkbox"]:checked + label:active:before {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Nh Css */
+.span_16_of_16 {
+	width: 100%;
+}
+
+.p_absolute {
+	position: absolute !important;
+}
+
+.new_header{
+    position: relative;
+    padding: 8px 10px 6px;
+    height: 50px;
+    background: #e7e7e7;
+}
+
+.pt20 {
+	padding-top: 20px
+}

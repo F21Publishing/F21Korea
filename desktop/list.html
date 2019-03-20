@@ -1,0 +1,1016 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>F21 Mobile Publishing Work Sheet</title>
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+<!-- style -->
+<style type="text/css">
+* { margin:0;padding:0}
+body {padding:20px;color:#333;font-size:11px;font-family:Arial, Helvetica, Verdana, sans-serif;background:#fff}
+/* title */
+h1 {color:#000;padding:10px;border:2px dotted #000;background:#e1e1e1;letter-spacing:0}
+h1 a {font-size:14px;margin:0 10px}
+h1 a+a {margin-left:0}
+h1 a::before {content:"/";display:inline-block;width:10px;color:#000;}
+del {color:#999 !important}
+del a {color:#999 !important}
+.xwork .date {float:right;margin-bottom:-10px;font-size:12px}
+/* table */
+.xwork table {width:100%;border-collapse:collapse;border:1px solid #666}
+.xwork caption {margin:30px 0 5px; text-align:left;font-size:20px;font-weight:bold;color:#000}
+.xwork caption	strong {display:inline-block;font-size:30px;font-weight:bold;color:#ff0000}
+.xwork caption	a {display:inline-block;margin-left:10px;font-size:16px;font-weight:bold;color:#000}
+.xwork th {padding:6px;border:1px solid #666;color:#ccc;font-size:110%;background-color:#000}
+.xwork td {position:relative; padding:10px 5px;border:1px solid #666;vertical-align:top}
+.xwork .ver th abbr {overflow:hidden;display:block;width:35px;text-overflow:ellipsis;white-space:nowrap}
+.xwork .del td {color:#999;}
+.modhistory {position:absolute;right:0;top:0;}
+/* task */
+.xwork .task,  .xwork .ie7, .xwork .ie8, .xwork .ie9, .xwork .ie10, .xwork .ie11, .xwork .FF, .xwork .CR, .xwork .SA {vertical-align:middle;text-align:center;font-weight:bold;color:#555}
+.xwork .done {padding:0;font-weight:bold;text-align:center;color:#090}
+/* effect */
+a, a:link, a:visited {color:#009;text-decoration:none}
+a:hover, a:active {color:#00f;text-decoration:underline}
+.xwork td:hover {background-color:#ddd}
+.xwork .grey td {background:#eee}
+.memo {color:#000;text-align:center;}
+.memo span {display:block; margin-top:10px;}
+.memo a {display:inline-block; padding:5px; color:#fff; cursor:pointer; text-decoration:none; background:#000;}
+.modified {display:none; position:absolute; top:30px; right:5px; width:200px; z-index:2; padding:5px; background:#000; color:#fff; text-align:left;}
+</style>
+<!-- /style -->
+</head>
+
+<body>
+<!-- sheet -->
+<!-- note -->
+<h1>F21 Mobile Publishing Work Sheet</h1>
+
+<div class="xwork">
+
+	<p class="date">Update Date : 2016-10-26</p>
+
+	<span>2016-10-26 신규</span><table class="mwork" summary="Work Sheet">
+		<caption>Work Sheet</caption>
+		<colgroup>
+			<col width="5%">
+			<col width="5%">
+			<col width="3%">
+			<col width="2%">
+			<col width="5%">
+			<col width="2%">
+			<col span="6" width="3%">
+			<col width="*">
+		</colgroup>
+		<thead>
+			<tr>
+				<th rowspan="3">1 depth</th>
+				<th rowspan="3">2 depth</th>
+				<th rowspan="3">3 depth</th>
+				<th rowspan="3">Directory</th>
+				<th rowspan="3">FileName/Link</th>
+				<th rowspan="3">Task</th>
+				<th colspan="7"><abbr title="galaxy">Galaxy</abbr></th>
+				<th colspan="4"><abbr title="LG">LG</abbr></th>
+				<th colspan="5"><abbr title="iPhone">iPhone</abbr></th>
+				<th colspan="4"><abbr title="Vega">Vega</abbr></th>
+				<th rowspan="3">memo</th>
+			</tr>
+			<tr>
+				<th><abbr title="NOTE2">NOTE2</abbr></th>
+				<th><abbr title="S3 LTE">S3 LTE</abbr></th>
+				<th><abbr title="S4 LTE-A">S4 LTE-A</abbr></th>
+				<th><abbr title="S4">S4</abbr></th>
+				<th><abbr title="NOTE3">NOTE3</abbr></th>
+				<th><abbr title="NOTE4">NOTE4</abbr></th>
+				<th><abbr title="S5">S5</abbr></th>
+				<th><abbr title="G pro">G pro</abbr></th>
+				<th><abbr title="G">G</abbr></th>
+				<th><abbr title="G2">G2</abbr></th>
+				<th><abbr title="G3">G3</abbr></th>
+				<th><abbr title="4S">4S</abbr></th>
+				<th><abbr title="5">5</abbr></th>
+				<th><abbr title="5S">5S</abbr></th>
+				<th><abbr title="6">6</abbr></th>
+				<th><abbr title="6 Plus">6 Plus</abbr></th>
+				<th><abbr title="R3">R3</abbr></th>
+				<th><abbr title="SecretNote">Secret Note</abbr></th>
+				<th><abbr title="IRON">IRON</abbr></th>
+				<th><abbr title="IRON2">IRON2</abbr></th>
+			</tr>
+			<tr class="ver">
+				<th><abbr title="NOTE2 젤리빈">젤리빈</abbr></th>
+				<th><abbr title="S3 LTE 젤리빈">아이스크림샌드위치-젤리빈</abbr></th>
+				<th><abbr title="S4 LTE-A 킷캣">킷캣</abbr></th>
+				<th><abbr title="S4 젤리빈">젤리빈</abbr></th>
+				<th><abbr title="NOTE3 킷캣">킷캣</abbr></th>
+				<th><abbr title="NOTE4 킷캣">킷캣</abbr></th>
+				<th><abbr title="S5 킷캣">킷캣</abbr></th>
+				<th><abbr title="G pro 킷캣">킷캣</abbr></th>
+				<th><abbr title="G 젤리빈">젤리빈</abbr></th>
+				<th><abbr title="G2 젤리빈">젤리빈</abbr></th>
+				<th><abbr title="G3 롤리팝">롤리팝</abbr></th>
+				<th><abbr title="4S iOS6">iOS6</abbr></th>
+				<th><abbr title="5 iOS6">iOS6</abbr></th>
+				<th><abbr title="5S iOS7">iOS7</abbr></th>
+				<th><abbr title="6 iOS8">iOS8</abbr></th>
+				<th><abbr title="6 Plus iOS8">iOS8</abbr></th>
+				<th><abbr title="R3 젤리빈">젤리빈</abbr></th>
+				<th><abbr title="SecretNote 킷캣">킷캣</abbr></th>
+				<th><abbr title="IRON 젤리빈">젤리빈</abbr></th>
+				<th><abbr title="IRON2 킷캣">킷캣</abbr></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="grey">
+				<td>Guide</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="https://forever21publishing.github.io/f21Guide/guide_snippet.html" target="_blank">guide_snippet.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo"></td>
+			</tr>
+			<!-- Main : Start -->
+			<tr>
+				<td>Main</td>
+				<td>Main (GNB)</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="Default.html" target="_blank">Default.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+					<a>VIEW</a>
+					<div class="modified">
+						<p></p>
+					</div>
+				</td>
+			</tr>
+			<!-- Main : End -->
+
+			<!-- Category : Start -->
+			<tr>
+				<td rowspan="3">Category</td>
+				<td>Search</td>
+				<td></td>
+				<td>Search</td>
+				<td class="filename"><a href="Search/Search.html" target="_blank">Search.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>Category</td>
+				<td></td>
+				<td>Product</td>
+				<td class="filename"><a href="Product/Category.html" target="_blank">Category.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>Product</td>
+				<td></td>
+				<td>Product</td>
+				<td class="filename"><a href="Product/Product.html" target="_blank">Product.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<!-- Category : End -->
+
+			<!-- My Account : Start -->
+			<tr>
+				<td rowspan="8">Account Info</td>
+				<td>Search</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>Address Book</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>Order History</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>Wish List</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>Point(E-Money)</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>Coupon</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>Order Return (KR)</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>Q&A</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<!-- My Account : End -->
+
+			<!-- Basket : Start -->
+			<tr>
+				<td>Basket</td>
+				<td>Basket</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<!-- Basket : End -->
+
+			<!-- Check Out : Start -->
+			<tr>
+				<td rowspan="2">Check Out</td>
+				<td>Check Out</td>
+				<td></td>
+                <td>Check Out</td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<!-- Check Out : End -->
+            <!-- confirm : Start -->
+            <tr>
+                <td >Check Out</td>
+                <td></td>
+                <td>confirm</td>
+                <td class="filename"><a href="checkout/confirm.html" target="_blank"></a></td>
+                <td class="task"></td>
+                <td class="NOTE2"></td>
+                <td class="S3 LTE"></td>
+                <td class="S4 LTE-A"></td>
+                <td class="S4"></td>
+                <td class="NOTE3"></td>
+                <td class="NOTE4"></td>
+                <td class="S5"></td>
+                <td class="G pro"></td>
+                <td class="G"></td>
+                <td class="G2"></td>
+                <td class="G3"></td>
+                <td class="4S"></td>
+                <td class="5"></td>
+                <td class="5S"></td>
+                <td class="6"></td>
+                <td class="6 Plus"></td>
+                <td class="R3"></td>
+                <td class="SecretNote"></td>
+                <td class="IRON"></td>
+                <td class="iIRON2"></td>
+                <td class="memo"></td>
+            </tr>
+            <!-- confirm : End -->
+
+			<!-- Sign In Out : Start -->
+			<tr>
+				<td rowspan="4">Sign In</td>
+				<td>Sign In</td>
+				<td></td>
+				<td>Login</td>
+				<td class="filename"><a href="Login/Login.html" target="_blank">Login.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>Create Account</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>Forgot Password</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>Sign Out</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<!-- Sign In : End -->
+
+			<!-- Etc : Start -->
+			<tr>
+				<td rowspan="9">Etc</td>
+				<td>Store information</td>
+				<td></td>
+				<td>storelist</td>
+				<td class="filename"><a href="Store/storelist.html" target="_blank"></a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>FAQ</td>
+				<td></td>
+				<td>CustomerService</td>
+				<td class="filename"><a href="CustomerService/faq.html" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>About FOREVER21</td>
+				<td></td>
+				<td>About</td>
+				<td class="filename"><a href="Company/About.html" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>Term&Condition</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>Privacy Policy</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>Contactus</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>News&Event</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>Delivery/Return</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<tr>
+				<td>TrackOrder</td>
+				<td></td>
+				<td></td>
+				<td class="filename"><a href="" target="_blank">.html</a></td>
+				<td class="task"></td>
+				<td class="NOTE2"></td>
+				<td class="S3 LTE"></td>
+				<td class="S4 LTE-A"></td>
+				<td class="S4"></td>
+				<td class="NOTE3"></td>
+				<td class="NOTE4"></td>
+				<td class="S5"></td>
+				<td class="G pro"></td>
+				<td class="G"></td>
+				<td class="G2"></td>
+				<td class="G3"></td>
+				<td class="4S"></td>
+				<td class="5"></td>
+				<td class="5S"></td>
+				<td class="6"></td>
+				<td class="6 Plus"></td>
+				<td class="R3"></td>
+				<td class="SecretNote"></td>
+				<td class="IRON"></td>
+				<td class="iIRON2"></td>
+				<td class="memo">
+				</td>
+			</tr>
+			<!-- Etc : End -->
+		</tbody>
+	</table>
+
+</div>
+
+<script type="text/javascript">
+$(".memo a").click(function(e) {
+	var obj = $(this).next(".modified"); 
+ 	var otherobj = $(".modified").not(obj); 
+	$(obj).toggle();
+ 	$(otherobj).hide(); 
+});
+</script>
+<!-- /sheet -->
+
+</body>
+</html>

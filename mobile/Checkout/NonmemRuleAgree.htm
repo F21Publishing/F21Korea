@@ -1,0 +1,144 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="ct_rule" id="mb_nonmemAgreeCheck">
+    <div class="column span_6_of_12 c_normal right">
+        <div class="c_title">
+            [필수] 비회원 정보 수집 동의
+        </div>
+        <div class="context">
+            <p>
+                비회원으로 구매시, 이용 안내 및 필수 개인정보 취급방침 항목에 동의하셔야 주문이 가능합니다. 비회원 구매는 1회 물품 구매 한도액이 50만원으로 제한됩니다.
+            </p>
+            <br />
+            <p>
+                <table width="100%" border="1" style="border-collapse:collapse; text-align:center;">
+                    <tr style="background-color:#DFDFDF">
+                        <th>
+                            목적
+                        </th>
+                        <th>
+                            항목
+                        </th>
+                        <th>
+                            보유기간
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            회사가 제공하는 서비스 이용에 따른 <br />
+                            본인식별 절차에 이용
+                        </td>
+                        <td>
+                            이름, 이메일,  <br />
+                            전화번호, 핸드폰
+                        </td>
+                        <td rowspan="3">
+                            개인정보의 수집 및 이용목적 달성시  <br />
+                            또는 법령에 따른 보존기간
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            물품 배송에 대한 배송지 정보 및  <br />
+                            수취인과의 원활한 배송진행에 이용
+                        </td>
+                        <td>
+                            이름, 이메일, <br />
+                            전화번호, 휴대폰번호, 주소
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            거래의 원활한 진행, <br />
+                            본인의사의 확인, 불만처리
+                        </td>
+                        <td>
+                            이름, 이메일, <br />
+                            전화번호, 휴대폰번호
+                        </td>
+                    </tr>
+                </table>
+            </p>
+            <div class="agree">
+                <input type="checkbox" name="chkAgree1" runat="server" ID="chkAgree1" value="chkAgree1" class="checkAll" clientidmode="Static" onchange="fnAgrCheckboxChanged()" />
+                <label for="chkAgree1"><span></span>비회원 구매 및 결제 개인정보취급방침에 대하여 동의합니다.</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="column span_6_of_12 c_normal right">
+        <div class="c_title">
+            [필수] 비회원 이용 안내 동의
+        </div>
+        <div class="context">
+            <p>
+                비회원으로 구매시, 포인트 적립 및 쿠폰 혜택과 묶음 배송 및 교환 서비스가 제공되지 않습니다.
+            </p>
+            <br />
+            <div class="agree">
+                <input type="checkbox" name="chkAgree2" runat="server" id="chkAgree2" value="chkAgree2" class="checkAll" onchange="fnAgrCheckboxChanged()" />
+                <label for="chkAgree2"><span></span> 이용 안내를 숙지하였으며 이에 동의합니다.</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="column span_6_of_12 c_normal right">
+        <div class="c_title">
+            [선택] 이메일 수신 동의
+        </div>
+        <div class="context">
+            <p>
+                <table width="100%" border="1" style="border-collapse:collapse; text-align:center;">
+                    <tr style="background-color:#DFDFDF">
+                        <th>
+                            목적
+                        </th>
+                        <th>
+                            항목
+                        </th>
+                        <th>
+                            보유기간
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            신규 서비스, 신상풍이나 이벤트 정보, 마케팅 및 광고에 활용
+                        </td>
+                        <td>
+                            이메일
+                        </td>
+                        <td>
+                            구독해지시까지
+                        </td>
+                    </tr>
+                </table>
+            </p>
+            <br />
+            <p style="text-align:left; padding-top:10px">* 선택 동의 항목에 동의하지 않으셔도 비회원 주문이 가능합니다.</p>
+            <div class="agree">
+                <input type="checkbox" name="subscribe" runat="server" id="rdoSubscribeY" class="checkAll" onchange="fnAgrCheckboxChanged()" />
+                <label for="rdoSubscribeY" style="width:100%"><span></span>이메일로 쿠폰과 특가상품, 세일, 이벤트정보 등을 받는것에 동의합니다.</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="column span_6_of_12 c_normal right">
+        <div class="c_title">
+            <input type="checkbox" runat="server" name="entireCheck" id="entireCheck" onclick="fnAgreeAll();" />
+            <label for="entireCheck" style="width:100%"><span></span>FOREVER21 회원약관, 개인정보 수집 및 이용, 이메일 수신에 <b style="text-decoration: underline">모두</b> 동의합니다</label>
+        </div>
+    </div>
+    <button id="condition_agree" onclick="fnGoAgree();">동의하고 닫기</button>
+    <script type="text/javascript">
+
+        if ($("#hdChkAgree1").val() == "checked")
+            $("#chkAgree1").prop("checked", true);
+
+        if ($("#hdChkAgree2").val() == "checked")
+            $("#chkAgree2").prop("checked", true);
+
+        if ($("#hdRdoSubscribeY").val() == "checked")
+            $("#rdoSubscribeY").prop("checked", true);
+
+    </script>
+</div>

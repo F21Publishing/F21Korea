@@ -1,0 +1,685 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="canonical" href="http://www.forever21.co.jp/" />
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>レディースファッション | 【公式】フォーエバー21オンラインショップ</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Forever21" />
+    <meta name="apple-itunes-app" content="app-id=365886172">
+    <link rel="shortcut icon" href="http://www.forever21.co.jp/Mobile/f21.ico">
+    <link rel="stylesheet" href="../../Common/css/f21site.css" />
+    <link rel="stylesheet" href="../../Common/css/iThing-min.css" />
+    <script type="text/javascript" src="../../Common/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../Common/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../Common/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../../Common/js/jQRangeSlider-min.js"></script>
+    <script type="text/javascript" src="../../Common/js/f21jquery.js"></script>
+    <!--[if lte IE 8]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+        // -- 버튼 none/block
+        var memberValue = false;
+        function showMemberPolicy() {
+            if (memberValue == false) {
+                $('#MemberPolicyArea').load('/Login/MemberPolicy.htm'); //-- 경로 바꾸기
+                memberValue = true;
+                $('#memberCloseBtn').show();
+            }
+            else {
+                $('#MemberPolicyArea').text('FOREVER21 JAPAN RETAIL, LLC.(合同会社フォーエバー21ジャパンリテール、以下「FOREVER21」といいます。）は、その運営するFOREVER21　ジャパン　オンラインショップ(Http://Www.Forever21.Co.Jp 以下「本サービス」といいます。)のご利用規約(以下「本規約」といいます。)を次のとおり定めます。');
+                memberValue = false;
+                $('#memberCloseBtn').hide();
+            }
+        }
+
+        // -- 버튼 none/block
+        var privacyValue = false;
+        function showPrivacy() {
+            if (privacyValue == false) {
+                $('#PrivacyArea').load('/Login/Privacy.htm'); //-- 경로 바꾸기
+                privacyValue = true;
+                $('#privacyCloseBtn').show();
+            }
+            else {
+                $('#PrivacyArea').text('FOREVER21 JAPAN RETAIL, LLC.(合同会社フォーエバー21ジャパンリテール、以下「FOREVER21」といいます。）は、個人情報保護の重要性に鑑み、「個人情報の保護に関する法律」および本プライバシーポリシーを遵守し、お客様の個人情報を適正に管理することで、お客様のプライバシーの保護に努めます。又、お客様から提供された個人情報またはFOREVER21により収集された');
+                privacyValue = false;
+                $('#privacyCloseBtn').hide();
+            }
+        }
+
+        //-- 아이콘 none/block
+        function fnShareList() {
+            $(".sharespace").toggle();
+        }
+
+        //-- 사이즈변경 스크립트
+        function fnChangeSize(control) {
+
+            $('ul#ulSizeList button').each(function () {
+                $(this).removeClass('active');
+            });
+
+            $(control).addClass('active');
+
+        }
+
+    </script>
+</head>
+<body>
+
+    <div id="left_overlay"></div>
+    <div id="right_overlay"></div>
+
+
+    <!-- Global Navigation : Start -->
+    <nav id="global">
+        <div class="span_16_of_16 sign_in"><a href="#">hello, sign in</a></div>
+        <div class="span_16_of_16 mega_menu">
+            <ul>
+                <li><a id="a_women" href="javascript:fnShowSubMenu(0);">Women</a></li>
+                <li><a id="a_g_plussize" href="javascript:fnShowSubMenu(1);">Contemporary</a></li>
+                <li><a id="a_g_men" href="javascript:fnShowSubMenu(2);">Men</a></li>
+                <li><a id="a_girls" href="javascript:fnShowSubMenu(3);">Kids</a></li>
+                <li><a id="a_g_beauty" href="javascript:fnShowSubMenu(4);">Sale</a></li>
+            </ul>
+        </div>
+
+        <!-- Women : Start -->
+        <div id="div_women" class="span_16_of_16 sub_menu" style="display:none;">
+            <ul>
+                <li><a href="#">view all</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">トップス</a></li>
+                <li><a href="#">Tシャツ/カットソー</a></li>
+                <li><a href="#">タンク/キャミソール</a></li>
+                <li><a href="#">ブラウス/シャツ</a></li>
+                <li><a href="#">ニット/セーター</a></li>
+                <li><a href="#">カーディガン</a></li>
+                <li><a href="#">パーカー/スウェット</a></li>
+                <li><a href="#">ワンピース</a></li>
+                <li><a href="#">ボトムス</a></li>
+                <li><a href="#">スカート</a></li>
+                <li><a href="#">パンツ</a></li>
+                <li><a href="#">ジーンズ</a></li>
+                <li><a href="#">ショートパンツ</a></li>
+                <li><a href="#">オールインワン</a></li>
+                <li><a href="#">レギンス</a></li>
+                <li><a href="#">アウターウェア</a></li>
+                <li><a href="#">ジャケット/ブルゾン</a></li>
+                <li><a href="#">コート</a></li>
+                <li><a href="#">ベスト</a></li>
+                <li><a href="#">インナーウェア</a></li>
+                <li><a href="#">スイムウェア</a></li>
+                <li><a href="#">The Basics Shop</a></li>
+                <li><a href="#">Shop By Outfit</a></li>
+            </ul>
+        </div>
+        <!-- Women : End -->
+        <!-- Contemporary : Start -->
+        <div id="div_g_plussize" class="span_16_of_16 sub_menu" style="display:none;">
+            <ul>
+                <li><a href="#">contemporary</a></li>
+                <li><a href="#">women</a></li>
+                <li><a href="#">トップス</a></li>
+                <li><a href="#">ワンピース</a></li>
+                <li><a href="#">ボトムス</a></li>
+                <li><a href="#">アウターウェア</a></li>
+                <li><a href="#">インナーウェア</a></li>
+                <li><a href="#">スイムウェア</a></li>
+                <li><a href="#">contemporary</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">accessories</a></li>
+                <li><a href="#">shoes</a></li>
+                <li><a href="#">bag</a></li>
+                <li><a href="#">men</a></li>
+                <li><a href="#">kids</a></li>
+            </ul>
+        </div>
+        <!-- Contemporary : End -->
+        <!-- Men : Start -->
+        <div id="div_g_men" class="span_16_of_16 sub_menu" style="display:none;">
+            <ul>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">women</a></li>
+                <li><a href="#">トップス</a></li>
+                <li><a href="#">ワンピース</a></li>
+                <li><a href="#">ボトムス</a></li>
+                <li><a href="#">アウターウェア</a></li>
+                <li><a href="#">インナーウェア</a></li>
+                <li><a href="#">スイムウェア</a></li>
+                <li><a href="#">contemporary</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">accessories</a></li>
+                <li><a href="#">shoes</a></li>
+                <li><a href="#">bag</a></li>
+                <li><a href="#">men</a></li>
+                <li><a href="#">kids</a></li>
+            </ul>
+        </div>
+        <!-- Men : End -->
+        <!-- Kids : Start -->
+        <div id="div_girls" class="span_16_of_16 sub_menu" style="display:none;">
+            <ul>
+                <li><a href="#">ワンピース</a></li>
+                <li><a href="#">women</a></li>
+                <li><a href="#">トップス</a></li>
+                <li><a href="#">ワンピース</a></li>
+                <li><a href="#">ボトムス</a></li>
+                <li><a href="#">アウターウェア</a></li>
+                <li><a href="#">インナーウェア</a></li>
+                <li><a href="#">スイムウェア</a></li>
+                <li><a href="#">contemporary</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">accessories</a></li>
+                <li><a href="#">shoes</a></li>
+                <li><a href="#">bag</a></li>
+                <li><a href="#">men</a></li>
+                <li><a href="#">kids</a></li>
+            </ul>
+        </div>
+        <!-- Kids : End -->
+        <!-- Sale : Start -->
+        <div id="div_g_beauty" class="span_16_of_16 sub_menu" style="display:none;">
+            <ul>
+                <li><a href="#">men</a></li>
+                <li><a href="#">women</a></li>
+                <li><a href="#">トップス</a></li>
+                <li><a href="#">ワンピース</a></li>
+                <li><a href="#">ボトムス</a></li>
+                <li><a href="#">アウターウェア</a></li>
+                <li><a href="#">インナーウェア</a></li>
+                <li><a href="#">スイムウェア</a></li>
+                <li><a href="#">contemporary</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">accessories</a></li>
+                <li><a href="#">shoes</a></li>
+                <li><a href="#">bag</a></li>
+                <li><a href="#">men</a></li>
+                <li><a href="#">kids</a></li>
+            </ul>
+        </div>
+        <!-- Sale : End -->
+
+        <div class="newsandevent">
+            <div>
+                <span>NEWS & EVENT</span>
+                <span class="float_right space_right_20"><a class="underline" href="#">もっと見る</a></span>
+            </div>
+            <div><a href="#">-24H限定！全品送料無料！10/21(金)9:59AMまで</a></div>
+            <div><a href="#">-シングルアイテム期間限定40％OFF！10/26(水)9:59AMまで!</a></div>
+        </div>
+
+        <!-- Left Footer : Start -->
+        <div class="wrapper left_footer">
+            <div class="nav_footer">
+                <div class="column_wrapper c_container">
+                    <div class="column span_9_of_12 mobile">
+                        <div class="space_top_20 ">
+                            <section>
+                                <ul>
+                                    <li><a href="#">マイページ</a></li><!-- myacount 페이지 따로 뺴기로 함-->
+                                    <li><a href="#">ストア情報</a></li>
+                                    <li><a href="#">ご利用ガイド</a></li>
+                                    <li><a href="#">会社概要</a></li>
+                                    <li><a href="#">総合Q&A</a></li>
+                                    <li><a href="#">お問い合わせ</a></li>
+                                    <li><a href="#">注文履歴</a></li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="column span_3_of_12 footer_right">
+                        <div class="f_download_App">
+                            <div class="f_download">
+                                <a href="#"><span>アプリ ダウンロード</span> <span class="icon_download" style="top:5px;left:130px;position:relative;"></span></a>
+                            </div>
+                        </div>
+                        <div class="f_country" style="z-index:1" onclick="fnViewCountryList();">
+                            <span class="icon_flag_japan"></span> japan <span class="icon_arrowdown"></span>
+                            <div class="f_submenu t_countrylist">
+                                <ul>
+                                    <li><a href="#"><span class="icon_flag_canada"></span> canada</a></li>
+                                    <li><a href="#"><span class="icon_flag_eu"></span> europe</a></li>
+                                    <li><a href="#"><span class="icon_flag_usa"></span> united states</a></li>
+                                    <li><a href="#"><span class="icon_flag_uk"></span> united kingdom</a></li>
+                                    <li><a href="#"><span class="icon_flag_korea"></span> korea</a></li>
+                                    <li><a href="#"><span class="icon_flag_japan"></span> JAPAN</a></li>
+                                    <li><a href="#"><span class="icon_flag_china"></span> china</a></li>
+                                    <li><a href="#">taiwan</a></li>
+                                    <li><a href="#"><span class="icon_flag_mexico"></span> mexico</a></li>
+                                    <li><a href="#"><span class="icon_flag_india"></span> india</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <section class="footer_social_signup text_center">
+                                <div class="social_footer">
+                                    <a href="https://line.naver.jp/ti/p/%40f21japan" target="_blank"><span class="icon_s_line"></span></a>
+                                    <a href="https://www.facebook.com/Forever21" target="_blank"><span class="icon_s_facebook"></span></a>
+                                    <a href="https://twitter.com/forever21japan" target="_blank"><span class="icon_s_twitter"></span></a>
+                                    <a href="https://instagram.com/forever21/" target="_blank"><span class="icon_s_instagram"></span></a>
+                                    <a href="https://www.youtube.com/Forever21" target="_blank"><span class="icon_s_youtube"></span></a>
+                                    <!--<a href="https://www.pinterest.com/forever21/" target="_blank"><span class="icon_s_pinterest"></span></a>-->
+                                    <a href="https://plus.google.com/+Forever21/posts" target="_blank"><span class="icon_s_google"></span></a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="column span_12_of_12 copyright">
+                        <span>
+                            &copy;
+                            <script>document.write( (new Date( )).getFullYear( ) );</script> forever21, inc all rights reserved.
+                        </span><span><a href="#" class="m_terms">利用規約</a> <a href="#" class="m_commercial">特定商取引法</a> <a href="#">個人情報取扱方針</a> <a href="#" target="_blank">PC版表示</a></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Left Footer : End -->
+    </nav>
+
+    <!-- Shopping Bag : Start -->
+    <div id="popup_msg" style="display:none;">
+        <div class="btn_close"><a onclick="fnUnBlock()"><i class="fa fa-times"></i></a></div>
+        <div class="title">カートに商品は入っていません</div>
+        <div class="contents">ショッピングカートには何も入っていません。</div>
+        <div class="buttons">
+            <div class="left">
+                <input type="submit" value="お買い物を続ける" onclick="fnGoNewArrivals();" class="btn_medium disabled" style="margin-left:5px;" />
+            </div>
+            <div class="right">
+                <input type="submit" value="キャンセル" class="btn_medium close_msg" style="margin-left:-5px;" />
+            </div>
+        </div>
+    </div>
+    <!-- Shopping Bag : End -->
+
+    <div id="mobile_wrapper">
+        <!-- Header : Start -->
+        <header>
+            <!-- Global Kicker : Start -->
+            <div id="global_kicker">
+                <div class="gkicker_wrapper">
+                    <div class="g_kicker">
+                        <a href="#"><h3>100+NEW ARRIVALS&nbsp; <span style="color:#fff352;">AW新作入荷中！</span></h3></a>
+                        <a href="#"><h4>FREE SHIPPING 5,000円以上（税込）送料無料</h4></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Global Kicker : End -->
+            <!-- Top : Start -->
+            <div class="wrapper">
+                <div id="header_nav" class="h_sub">
+                    <!-- h_home, h_category, h_product, h_sub  페이지별 클래스 변경 -->
+                    <!-- Header Common : Start -->
+                    <div id="header_First" class="space_10">
+                        <a id="global_mobile" href="javascript:fnToggleLeftMenu();"><!--<span class="icon_t_menu"></span>--><span class="menu_ico"></span></a>
+                        <h1 id="f21_logo"><a href="/mobile" class="f21logo"></a></h1>
+                        <div class="pre_header right">
+                            <div class="t_myaccount">
+                                <a href="#">
+                                    <span class="top_text">sijun 様</span>
+                                    <span class="icon_t_myaccount"></span>
+                                </a>
+                            </div>
+                            <div class="t_wishlist">
+                                <a href="#">
+                                    <span class="count_no wishlist_count">3</span>
+                                    <span class="icon_t_wishlist"></span>
+                                </a>
+                            </div>
+                            <div class="t_shoppingbag" onclick="fnShowDiv('shoppingbag_list'); fnBindItems();">
+                                <span class="count_no shoppingbag">0</span>
+                                <a href="#"><span class="icon_t_shoppingbag"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Header Common : End -->
+
+                    <div id="header_Second" class="p_relative">
+                        <div id="divSub">
+                            <!-- Title : Start -->
+                            <div id="divCategoryTitleContainer" class="span_14_of_16 category_title text_center" style="">
+                                <div id="divSubCategoryTitle" class="span_16_of_16"><h1 id="CategoryTitle" class="open_depth">Tops<i></i></h1></div><!-- 하위메뉴 있을경우  class="open_depth" 추가 -->
+                            </div>
+                            <!-- Title : End -->
+
+                            <div id="divButtonSearch" class="span_1_of_16 float_right" style="display: block;">
+                                <a href="javascript:fnSlideSearchArea('open');"><span class="icon_t_search search_icon"></span></a>
+                            </div>
+
+                            <!-- Search : End -->
+                            <div id="divSubSearchArea" class="search_top p_absolute p_right">
+                                <input type="text" class="m_search" name="ihKeyword" placeholder="商品検索">
+                                <button id="btnMainSearch" class="btn_search" style="display:none"></button><!-- Main Page 에서 만 노출 -->
+                                <button id="btnSubSearch" class="btn_search btn_close" onclick="javascript:fnSlideSearchArea('close'); return false;" style="display:none"></button><!-- Main Page 에서 만 노출안함 -->
+                            </div>
+                            <!-- Search : End -->
+                        </div>
+
+                        <!-- 1Depth : Start -->
+                        <div class="depth_one">
+                            <ul>
+                                <li><a href="#">Women</a></li>
+                                <li><a href="#">Plus Size</a></li>
+                                <li><a href="#">Men</a></li>
+                                <li><a href="#">Girls</a></li>
+                                <li><a href="#">Beauty</a></li>
+                            </ul>
+                        </div>
+                        <!-- 1Depth : End -->
+                        <!-- 2Depth : Start -->
+                        <div id="owl-depth-two" class="depth_two">
+                            <div class="item"><a>View All</a></div>
+                            <div class="item"><a>New Arrivals</a></div>
+                            <div class="item"><a>トップス</a></div>
+                            <div class="item"><a>Tシャツ/カットソー</a></div>
+                            <div class="item"><a>タンク/キャミソール</a></div>
+                            <div class="item"><a>ブラ</a></div>
+                            <div class="item"><a>トップス</a></div>
+                            <div class="item"><a>Tシャツ/カットソー</a></div>
+                            <div class="item"><a>タンク/キャミソール</a></div>
+                            <div class="item"><a>ブラ</a></div>
+                        </div>
+                        <!-- 2Depth : End -->
+                        <!-- 3Depth : Start -->
+                        <div class="depth_three p_absolute" style="display:none">
+                            <ul>
+                                <li><a href="#">View All</a></li>
+                                <li><a href="#">New Arrivals</a></li>
+                                <li><a href="#">トップス</a></li>
+                                <li><a href="#">Tシャツ/カットソー</a></li>
+                                <li><a href="#">タンク/キャミソール</a></li>
+                                <li><a href="#">ブラ</a></li>
+                                <li><a href="#">トップス</a>/li>
+                                <li><a href="#">Tシャツ/カットソー</a></li>
+                                <li><a href="#">タンク/キャミソール</a></li>
+                                <li><a href="#">ブラ</a></li>
+                            </ul>
+                            <button type="button" class="close"></button>
+                        </div>
+                        <!-- 3Depth : End -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search : Start -->
+            <div class="search_wrapper new">
+                <div class="new_search">
+                    <input type="text" class="m_search" placeholder="商品検索">
+                    <span class="close_popup"></span>
+                    <!-- SEARCH SUGGESTION : Start -->
+                    <div class="brm-autosuggest-menu-header" style="display:none;"></div>
+                    <!-- SEARCH SUGGESTION : End -->
+                </div>
+            </div>
+        </header>
+        <!-- Header : End -->
+        <!-- 메뉴별 Header Calss 변경 : Start-->
+        <script>
+	$(document).ready(function() {
+		$('#header_nav').removeClass('h_home h_product h_sub').addClass('h_category');
+	});
+        </script>
+        <!-- 메뉴별 Header Calss 변경 : End-->
+        <!-- Content : Start -->
+        <div class="content_wrapper space_10">
+            <!-- RegisterUser S -->
+            <div id="pre" style="display:block;">
+                <div class="wrapper">
+                    <div class="column_wrapper c_container">
+                        <div class="column span_6_of_12 c_normal right">
+                            <div class="c_title">規約同意</div>
+                            <div class="context">会員登録をご希望の場合は、利用規約、個人情報取扱方針を含むご利用に関するご案内をお読みいただき、ご同意の上、次におすすみ下さい。</div>
+                            <div class="c_title">
+                                FOREVER21 ご利用規約
+                                <span id="memberCloseBtn" class="text_right" onclick="showMemberPolicy();" style="display:none;">閉じる</span>
+                            </div>
+                            <div class="context">
+                                <p id="MemberPolicyArea">FOREVER21 JAPAN RETAIL, LLC.(合同会社フォーエバー21ジャパンリテール、以下「FOREVER21」といいます。）は、その運営するFOREVER21　ジャパン　オンラインショップ(Http://Www.Forever21.Co.Jp 以下「本サービス」といいます。)のご利用規約(以下「本規約」といいます。)を次のとおり定めます。</p>
+                                <span class="text_right"><a href="javascript:showMemberPolicy();">もっと見る></a></span>
+                                <div class="agree">
+                                    <input id="condition1" type="checkbox"><label for="condition1"><span></span> FOREVER21の利用規約に同意します。</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column span_6_of_12 c_normal right">
+                            <div class="c_title">
+                                FOREVER21 個人情報取扱方針
+                                <span id="privacyCloseBtn" class="text_right" onclick="showPrivacy();" style="display:none;">閉じる</span>
+                            </div>
+                            <div class="context">
+                                <p id="PrivacyArea">FOREVER21 JAPAN RETAIL, LLC.(合同会社フォーエバー21ジャパンリテール、以下「FOREVER21」といいます。）は、個人情報保護の重要性に鑑み、「個人情報の保護に関する法律」および本プライバシーポリシーを遵守し、お客様の個人情報を適正に管理することで、お客様のプライバシーの保護に努めます。又、お客様から提供された個人情報またはFOREVER21により収集された</p>
+                                <span class="text_right"><a href="javascript:showPrivacy();">もっと見る></a></span>
+                                <div class="agree">
+                                    <input id="condition2" type="checkbox"><label for="condition2"><span></span> FOREVER21の利用規約に同意します。</label>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="condition_agree" onclick="fCheckStep1();">確認</button>
+                    </div>
+                </div>
+            </div>
+            <div id="main" style="display:block">
+                <div class="wrapper">
+                    <div class="column_wrapper c_container">
+                        <!-- New User -->
+                        <section class="login_form create_accounts">
+                            <div class="filter_title"><span>下記の会員情報をご入力下さい(*必須項目)</span></div>
+                            <div>
+                                <label>お名前 姓 *</label>
+                                <input type="text" id="txtFirstName" class="line" placeholder="名字" maxlength="50" />
+                                <span id="tooltip_firstname" style="display:none" class="tooltip"><span>お名前 姓を入力してください</span></span>
+                            </div>
+                            <div>
+                                <label>お名前 名 *</label>
+                                <input type="text" id="txtLastName" class="line" placeholder="名前" maxlength="50" />
+                                <span id="tooltip_lastname" style="display:none" class="tooltip"><span>お名前 名を入力してください</span></span>
+                            </div>
+                            <div>
+                                <label>フリガナ セイ *</label>
+                                <input type="text" id="txtJpFirstName" class="line" placeholder="例：ヤマダ" maxlength="50" />
+                                <span id="tooltip_Jpfirstname" style="display:none" class="tooltip"><span>フリガナ セイを入力してください</span></span>
+                            </div>
+                            <div>
+                                <label>フリガナ メイ *</label>
+                                <input type="text" id="txtJpLastName" class="line" placeholder="例：タロウ" maxlength="50" />
+                                <span id="tooltip_Jplastname" style="display:none" class="tooltip"><span>フリガナ メイを入力してください</span></span>
+                            </div>
+                            <div>
+                                <label>生年月日</label>
+                                <input type="text" class="line" id="txtBirth" placeholder="数字8桁(例：1990-01-01)" maxlength="10">
+                                <span id="tooltip_birthday" style="display:none" class="tooltip"><span>生年月日を確認してください</span></span>
+                                <span id="tooltip_birthday_enter" style="display:none" class="tooltip"><span>生年月日を入力してください</span></span>
+                            </div>
+                            <div>
+                                <label>性別</label>
+                                <div class="optional">
+                                    <input type="radio" name="gender" id="female" value="female"><label for="female"><span></span> 女</span></label>
+                                    <input type="radio" name="gender" id="male" value="male" ;"><label for="male"><span></span> 男</span></label>
+                                </div>
+                                <span id="tooltip_gender" style="display:none" class="tooltip"><span>性別の項目をチェックしてください。</span></span>
+                            </div>
+                            <div>
+                                <label>メールアドレス *</label>
+                                <input type="text" id="txtEmail" class="line" placeholder="半角英数字" maxlength="50" />
+                                <span id="tooltip_email" style="display:none" class="tooltip"><span>メールアドレスを入力してください</span></span>
+                                <span id="tooltip_email_value" style="display:none" class="tooltip"><span>メールアドレスを確認してください</span></span>
+                                <span id="tooltip_email_exist" style="display:none" class="tooltip"><span>すでに会員登録済みのメールアドレスです</span></span>
+                            </div>
+                            <div>
+                                <label>メールアドレス(確認) *</label>
+                                <input type="text" id="txtConfirmEmail" class="line" placeholder="半角英数字" maxlength="50"/>
+                                <span id="tooltip_confirmemail" style="display:none" class="tooltip"><span>メールアドレス(確認)を入力してください</span></span>
+                                <span id="tooltip_confirmemail_value" style="display:none" class="tooltip"><span>メールアドレス(確認)を確認してください</span></span>
+                            </div>
+                            <div>
+                                <label>パスワード *</label>
+                                <input type="password" id="txtPassword" class="line" placeholder="半角英数小文字4〜10文字" maxlength="10" />
+                                <span id="tooltip_password" style="display:none" class="tooltip"><span>パスワードを入力してください</span></span>
+                                <span id="tooltip_password_value" style="display:none" class="tooltip"><span>半角英数小文字の4～10文字で入力可能です</span></span>
+                            </div>
+                            <div>
+                                <label>パスワード(確認) *</label>
+                                <input type="password" id="txtConfirmPassword" class="line" placeholder="半角英数小文字4〜10文字" maxlength="14"/>
+                                <span id="tooltip_confirmpassword" style="display:none" class="tooltip"><span>パスワード(確認)を確認してください</span></span>
+                                <span id="tooltip_confirmpassword_enter" style="display:none" class="tooltip"><span>パスワード(確認)を入力してください</span></span>
+                            </div>
+                            <div>
+                                <label>電話番号* （電話番号はどちらか一つ必須）</label>
+                                <input type="text" id="txtTel" class="line" placeholder="例：03-3404-3201" maxlength="25" onkeypress="fn_CheckTypeNumber();"/>
+                                <span id="tooltip_tel" style="display:none" class="tooltip"><span>電話番号はどちらか一つ必須項目です。</span></span>
+                                <span id="tooltip_tel_value" style="display:none" class="tooltip"><span>電話番号を確認してください(#-#-#)</span></span>
+                            </div>
+                            <div>
+                                <label>携帯番号* （電話番号はどちらか一つ必須）</label>
+                                <input type="text" id="txtTelephone" class="line" placeholder="例：080-1111-1111" maxlength="25" onkeypress="fn_CheckTypeNumber();"/>
+                                <span id="tooltip_telephone" style="display:none" class="tooltip"><span>電話番号はどちらか一つ必須項目です。</span></span>
+                                <span id="tooltip_telephone_value" style="display:none" class="tooltip"><span>携帯電話番号を確認してください(#-#-#)</span></span>
+                            </div>
+                            <div>
+                                <label>郵便番号 *</label>
+                                <input ID="address_postalcode" type="text" class="line" maxlength="5" placeholder="検索結果から住所を選択してください" id="数字7桁(例：1500001)">
+                                <span id="tooltip_address_postalcode" style="display:none" class="tooltip"><span>郵便番号を入力してください。</span></span>
+                            </div>
+                            <div id="address_postalcode_search" class="c_normal" style="display:none" >
+                                <div class="context">
+                                    <em>郵便番号および町村名を入力して検索結果から住所を選択してください。例1：1500001（ハイフン不要）　例2：神宮前</em>
+                                </div>
+                                <div>
+                                    <input type="text" class="line" id="address_postalcode_search_text" placeholder="郵便番号および町村名はここに入力してください" maxlength="20" value="" />
+                                </div>
+                                <div id="address_postalcode_search_list" class="filter_title" style="display:none"></div>
+                                <div class="findzipcode">
+                                    <button style="width:49%;display:inline-block" id="btnSearchPostalcode" onclick="return fnGetPostalcodeListCaller();">検索</button>
+                                    <button style="width:49%;display:inline-block;float:right" id="btnClosePostalcode" class="black" >閉じる</button>
+                                </div>
+                            </div>
+                            <div>
+                                <label>都道府県/市区町村 *</label>
+                                <input type="text" id="txtCity" class="line" placeholder="都道府県/市区町村" maxlength="25">
+                                <span id="tooltip_city" style="display:none" class="tooltip"><span>住所を町村名のみ入力して検索してください</span></span>
+                            </div>
+                            <div>
+                                <label>丁目/番地/号 *</label>
+                                <input type="text" id="txtAddress1" class="line" placeholder="丁目/番地/号" maxlength="25" >
+                                <span id="tooltip_address1" style="display:none" class="tooltip"><span>丁目/番地/号を入力してください</span></span>
+                            </div>
+                            <div>
+                                <label>建物名/号室</label>
+                                <input type="text" id="txtAddress2" class="line" placeholder="建物名/号室" maxlength="25">
+                                <span id="tooltip_address2" style="display:none" class="tooltip"><span>上記フォームにメールアドレスを入力してください</span></span>
+                            </div>
+
+                            <div>
+                                <label>パスワードを忘れたときの質問 *</label>
+                                <input type="text" id="txtPw_Q" class="line" placeholder="例：母親の旧姓は？" maxlength="25" >
+                                <span id="tooltip_qestion" style="display:none" class="tooltip"><span>質問を入力してください</span></span>
+                            </div>
+                            <div>
+                                <label>パスワードを忘れたときの答え *</label>
+                                <input type="text" id="txtPw_A" class="line" placeholder="例：田中" maxlength="25">
+                                <span id="tooltip_answer" style="display:none" class="tooltip"><span>答えを入力してください</span></span>
+                            </div>
+                            <div>
+                                <label>メルマガ受信*</label>
+                                <div class="optional">
+                                    <input type="radio" name="mail" id="subscribe"><label for="subscribe"><span></span>はい</span></label><input type="radio" name="mail" id="unsubscribe"><label for="unsubscribe"><span></span>いいえ</span></label>
+                                    <div class="c_normal">
+                                        メルマガ受信でお得な情報や特典10%OFFクーポンを配信！
+                                        メルマガ会員様限定のキャンペーンも随時実施中！
+                                    </div>
+                                    <span id="tooltip_subscribe" style="display:none" class="tooltip"><span>メールマガジンの項目をチェックしてください</span></span>
+                                </div>
+                            </div>
+                            <!--<button id="condition_view" onclick="oldStep();">前のステップ</button>
+                            <div class="dividedline"><span>or</span></div>-->
+                            <button onclick="fn_Register();" id="registeruser_btn_register">会員登録する</button>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!-- RegisterUser E -->
+        </div>
+        <!-- Content : End -->   
+        </div>
+
+    <!-- Popup : Start -->
+    <!-- s:등록  -->
+    <div class="signup_slider" style="display:none;">
+        <div class="closeIcon" href="#"></div>
+        <div class="signup_img"><img src="http://www.forever21.co.jp/images/signup/JP_mobile_popup.jpg" alt="JP_mobile_popup.jpg" /></div>
+        <fieldset>
+            <input type="text" class="text" placeholder="enter your email address" />
+            <button type="button" id="mobileOptinSubscribe">SIGN UP</button>
+            <div class="tooltip signup_layer" style="display: none;"></div>
+        </fieldset>
+    </div>
+    <!-- e:등록 -->
+    <!-- s:완료 -->
+    <div class="signup_slider thanks_confirm" style="display:none;">
+        <div class="closeIcon"></div>
+        <div class="signup_img"><img src="http://www.forever21.co.jp/images/signup/JP_Mobile_thankyou.jpg" alt="JP_Mobile_thankyou" /></div>
+    </div>
+    <!-- e:완료 -->
+    <!-- Popup : End -->
+    <!-- Shopping Bag Right Menu : Start -->
+    <div id="shoppingbag_list" class="right_wrapper">
+        <div class="text_center space_10">ショッピングカート</div>
+
+        <!-- Order Summary -->
+        <div id="ordersummary_cart">
+            <div class="shopping_summarylist  shoppingcart">
+                <ul>
+                    <li class="s_label total">税込商品小計</li>
+                    <li class="s_value total"></li>
+                </ul>
+                <ul>
+                    <li class="s_label total"> 税込割引額</li>
+                    <li class="s_value total"></li>
+                </ul>
+                <ul>
+                    <li class="s_label total">獲得ポイント数</li>
+                    <li class="s_value total"></li>
+                </ul>
+                <ul>
+                    <li class="s_label total">税込商品合計</li>
+                    <li class="s_value total"></li>
+                </ul>
+                <ul>
+                    <li class="s_label total"> 内消費税</li>
+                    <li class="s_value total"></li>
+                </ul>
+            </div>
+            <button>商品を注文</button>
+        </div>
+
+        <div class="mobilecartitemlist"></div>
+        <div style="display:none;padding-bottom:10px">
+            <div style="" class="empty_bag">
+                <p><strong>ショッピングカートの中身は空です</strong></p>
+            </div>
+            <div class="empty_bag">
+                <button class="black">お買い物を続ける</button>
+            </div>
+            <div class="dividedline">
+                <span>or</span>
+            </div>
+            <button>ログイン</button>
+        </div>
+
+        <div class="text_center space_10">あとで買う</div>
+        <div class="empty_bag" style="display:none;">
+            <p><strong>保存された商品はありません</strong></p>
+        </div>
+    </div>
+    <!-- Shopping Bag Right Menu : End -->
+
+</body>
+</html>
