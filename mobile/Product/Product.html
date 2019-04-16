@@ -2489,7 +2489,7 @@
                     <div class="productAsk">
                         <div class="pr-snippet-read-write">
                             <div class="pr-snippet-write-review">
-                                <a class="pr-snippet-link" href="#">상품문의하기<!--<i>?</i>--></a>
+                                <a class="pr-snippet-link" href="#" onclick="fnShowWriteQuestionwArea();">상품문의하기<!--<i>?</i>--></a>
                             </div>
                         </div>
                         <div class="tooltip tooltip_CustomerAsk" style="display:none;">
@@ -3253,6 +3253,99 @@
         </div>
     </div>
     <!-- 20190225 Review Popup E -->
+    <!-- 20190408 상품문의하기 Popup S -->
+    <div class="jconfirm  jconfirm-white" style="display:none">
+        <div class="jconfirm-bg seen" style="transition-duration: 0.4s; transition-timing-function: cubic-bezier(0.36, 1.1, 0.2, 1); opacity: 0.7;"></div>
+        <div class="jconfirm-scrollpane" id="fnShowWriteQuestionwArea">
+            <div class="container">
+                <div class="row">
+                    <div class="jconfirm-box-container col-md-4">
+                        <div class="jconfirm-box" aria-labelledby="jconfirm-box80348" tabindex="-1" style="transition-duration: 0.4s; transition-timing-function: cubic-bezier(0.36, 1.1, 0.2, 1.5); margin-top: 0px; transition-property: transform, opacity, box-shadow, margin; margin-bottom: 0px;">
+                            <div class="closeIcon" style=""><span class="glyphicon glyphicon-remove"></span></div>
+                            <div class="title" id="jconfirm-box80348"></div>
+                            <div class="content" style="clip: rect(0px, 435px, 550px, -100px);">
+
+
+
+
+        <title>
+        
+        </title>
+
+            <form>
+
+            <input type="hidden" name="hdProductId" id="hdProductId" value="2000336527">
+            <input type="hidden" name="HdUerId" id="HdUerId" value="b3e7981a-fd09-4213-8a14-d2a59cdcd2f4">
+            <input type="hidden" name="HdCategory" id="HdCategory" value="bestseller_all">
+            <div class="waitlist_wrapper popup_content">
+                <div id="oos_form" class="context">
+                    <div class="c_title">상품문의하기</div>
+                    <fieldset>
+                        <div>
+                            <select>
+                                <option value="">문의 유형</option>
+                                <option value="사이즈">사이즈</option>
+                                <option value="재고">재고</option>
+                                <option value="소재">소재</option>
+                                <option value="디자인">디자인</option>
+                                <option value="색상">색상</option>
+                                <option value="모델 및 상품이미지">모델 및 상품이미지</option>
+                                <option value="오류">오류</option>
+                                <option value="기타">기타</option>
+                            
+                            </select>
+                            <input type="hidden" name="rl_CustomerAsk" id="rl_CustomerAsk">  
+                            <div class="tooltip tooltip_asktype" style="display: none;">문의 유형을 선택하세요</div>
+                        </div>
+                        <!-- 20190408 S -->
+                        <div>
+                            <label>제목</label> 
+                            <div class="p_relative colum span_16_of_16">
+                                <input type="text" class="wailist_field" maxlength="40">
+                                <span class="tooltip tooltip_title" style="display: none;">제목을 입력하세요</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label>문의내용</label> 
+                            <textarea name="message_CustomerAsk" rows="2" cols="20" id="message_CustomerAsk" class="input2" size="100" style="height:100px;width:100%;"></textarea>
+                            <div class="p_relative colum span_16_of_16">
+                                <span class="tooltip p_right top tooltip_content" style="display:none;"><span>내용을 입력하세요</span></span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label>답변수신 이메일</label>
+                            <div class="p_relative colum span_16_of_16">
+                                <input type="text" id="tbEmailAddress_CustomerAsk" class="wailist_field">
+                                <span class="tooltip tooltip_email" style="display: none;">이메일을 입력해주세요</span>
+                                <span class="tooltip tooltip_email2" style="display:none;">이메일 형식이 올바르지 않습니다.</span>
+                            </div>
+                        </div>
+                        <!-- 20190408 E -->
+                    </fieldset>
+                    <div class="agree">
+                        <span>
+                            <input type="checkbox" name="update_promo" id="chkSubscribe_CustomerAsk" checked="">
+                            <label for="yes" class="small_text"><span></span> 답변을 이메일로 받으시려면 체크해주십시요.</label>
+                        </span>
+                    </div>
+                    <div class="btn_wrapper center_text"><button>문의하기</button></div>
+        
+                </div>
+                <div id="oos_confirm_msg" style="display:none;">
+                    <div class="c_title">상품문의완료</div>
+                    <div class="soldout_confirm">상품문의에 대한 답변은 마이페이지&gt;상품문의에서 확인가능합니다.</div>
+                </div>
+            </div>
+            </form>
+        
+        
+        </div><div class="buttons" style="display: none;"></div><div class="jquery-clear"></div></div></div></div></div></div></div>
+
+
+
+    <!-- 20190408 상품문의하기 Popup E -->
     <script type="text/javascript">
 	// Set price filter
 	$(window).load(function(){
