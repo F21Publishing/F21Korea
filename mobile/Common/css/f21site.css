@@ -1,5 +1,5 @@
 ﻿@charset "UTF-8";
-/* Korea mobile 03/20/2019 Version 1 */
+/* Korea mobile 04/30/2019 Version 1 */
 /* ================================= */
 /* Reset Code                        */
 /*================================== */
@@ -7657,17 +7657,22 @@ button.shopitall {
 }
 
 .deal_tag {
-    position: absolute;
-    display: inline-block;
-    left: 20%;
-    top: 35%
+    /*position: absolute;
+    display: inline-block;*/
+    top: 10px
 }
 
+.NewItemTag4 .deal_tag {
+    display:table-cell;
+    vertical-align:middle;
+}
 .NewItemTag4 {
     position: absolute;
     display: inline-block;
-    width: 34px;
-    height: 34px;
+    display:table;
+    text-align: center;
+    width: 45px;
+    height: 45px;
     background: #000;
     border-radius: 50%;
     -moz-border-radius: 50%;
@@ -7694,7 +7699,7 @@ button.shopitall {
     width: 50px;
     height: 50px;
     font-size: 10px;
-    background: transparent
+    /*background: transparent*/
 }
 
 .right_tag .sold_out {
