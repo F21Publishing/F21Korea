@@ -19,6 +19,16 @@
     <script type="text/javascript" src="../Common/js/owl.carousel.js"></script>
     <script type="text/javascript" src="../Common/js/jQRangeSlider-min.js"></script>
     <script type="text/javascript" src="../Common/js/f21jquery.js"></script>
+    <!-- 20190719 S -->
+    <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
+    <script>
+
+            $(function(){       
+                $('img[usemap]').rwdImageMaps();
+            });
+            
+    </script> 
+    <!-- 20190719 E -->
     <!--[if lte IE 8]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -407,6 +417,25 @@
                     <!-- Header CheckOut : End -->
                 </div>
             </div>
+            <!-- 20190719 S -->
+            <div class="breadcrumb space_left space_right bg_white">
+                <div>
+                    <img border="0" style="width:100%;" src="../images/mobile_M1.gif" usemap="#001"><!-- 이미지 경로 변경 -->
+                    <map name="001">
+                        <area href="#" coords="102,221,313,331" shape="rect">
+                    </map>
+                </div>
+                <div>
+                    <img border="0" style="width:100%;" src="../images/mobile_M2.jpg" usemap="#002"><!-- 이미지 경로 변경 -->
+                    <map name="002">
+                        <area href="#" coords="255,211,386,237" shape="rect">
+                        <area href="#" coords="126,516,258,544" shape="rect">
+                        <area href="#" coords="414,517,546,545" shape="rect">
+                    </map>
+                </div>
+               
+            </div>
+            <!-- 20190719 E -->
         </header>
         <!-- Header : End -->
         <!-- 메뉴별 Header Calss 변경 : Start-->
@@ -419,7 +448,7 @@
         <!-- Content : Start -->
         <div class="content_wrapper">
             <!-- Coupon : Start -->
-            <div class="text_center space_top"><img src="../images/en/Mobile/common/img_coupon.jpg" style="max-width:100px" alt="21%off" /></div>
+            <div class="text_center space_top" style="display:none"><img src="../images/en/Mobile/common/img_coupon.jpg" style="max-width:100px" alt="21%off" /></div>
             <!-- Coupon : End-->
 
             <h2 class="space_left space_top font_arial font_normal">베스트 아이템</h2>
