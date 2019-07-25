@@ -1,5 +1,5 @@
 ﻿@charset "UTF-8";
-/* Korea mobile 04/30/2019 Version 1 */
+/* Korea mobile 07/25/2019 Version 1 */
 /* ================================= */
 /* Reset Code                        */
 /*================================== */
@@ -540,12 +540,14 @@ body.open_menu, body.open_right {
 .border_left {
   border-left: 1px solid #c1c1c1;
 }
-
 .no_border_top {
   border-top: 0 !important;
 }
 .no_border_bottom{
   border-bottom: 0 !important;
+}
+.border_top_black {
+    border-top:2px solid #111;
 }
 
 /* ============================== */
@@ -10473,7 +10475,16 @@ span[class^="star_"] {
     font-size: .8em;
     color: #727272;
 }
-
+.ad_fix {
+    position: fixed;
+    bottom: 55px;
+    left: 9px;
+    z-index: 9999999;
+}
+.ad_fix img {
+    width: 80px;
+    height: 80px;
+}
 /* ============================== */
 /* Responsive Code                */
 /*================================*/
@@ -10972,7 +10983,7 @@ span[class^="star_"] {
 .signup_slider fieldset {
     position: absolute;
     left: 2.5%;
-    top: 54%;
+    bottom: 54px;
     width: 95%;
     z-index: 0;
 }
@@ -11000,7 +11011,7 @@ span[class^="star_"] {
 .mail_privacy_check {
     position: absolute;
     left: 2.5%;
-    top: 50%;
+    bottom: 45px;
     width: 95%;
     margin-top: 55px;
     z-index: 1;

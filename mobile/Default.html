@@ -1075,16 +1075,38 @@
 
     <!-- Popup : Start -->
     <!-- s:등록  -->
-    <div class="signup_slider" style="display:none;">
+ <style>
+     body, #HasSearch{
+        overflow-y: hidden;
+     }
+     .signup_slider{
+        height:100%;
+     }
+    .signup_img {
+        height:150%;
+        overflow-y: scroll !important;
+    }
+    .signup_img img{
+        
+        position: fixed;
+        bottom:45px;
+        overflow-y: scroll !important;
+
+    }
+     @media only screen and (min-width:363px) and (max-width: 500px) {
+    }
+ </style>
+    <div class="signup_slider" style="display:block;">
         <div class="closeIcon" href="#"></div>
-        <div class="signup_img"><img src="http://img.forever21.co.kr/images/signup/mobile_popup.jpg_20170203103727638.jpg" alt="JP_mobile_popup.jpg" /></div>
+        <div class="signup_img"><img src="http://img.forever21.co.kr/images/signup/MOBILE_EARLY2.gif_20190723084413930.gif" alt="JP_mobile_popup.jpg" /></div>
         <fieldset>
             <input type="text" class="text" placeholder="enter your email address" />
             <button type="button" id="mobileOptinSubscribe">SIGN UP</button>
             <div class="tooltip signup_layer" style="display: none;"></div>
         </fieldset>
         <div class="mail_privacy_check">
-            <p class="comment"><input type="checkbox" id="privacyCheck1" class="privacyCheck"><label for="privacyCheck1"><span></span><a class="privacylink1">개인정보 수집 및 이용방침</a>에 동의합니다.</label></p>
+            <p class="comment space_top_5"><!-- 20190725 -->
+                <input type="checkbox" id="privacyCheck1" class="privacyCheck"><label for="privacyCheck1"><span></span><a class="privacylink1">개인정보 수집 및 이용방침</a>에 동의합니다.</label></p>
             <div class="tablearea typecolor">
                 <table>
                     <colgroup>

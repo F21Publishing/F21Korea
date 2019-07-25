@@ -17,16 +17,14 @@
     <script type="text/javascript" src="../Common/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="../Common/js/jQRangeSlider-min.js"></script>
     <script type="text/javascript" src="../common/js/jquery-confirm.js"></script>
+    <!-- 20190722 test alert 넣음 S-->
     <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
     <script>
-
-            $(function(){       
-                $('img[usemap]').rwdImageMaps();
-                $("#img").width("100%");
-            });
-            
+        $(function(){       
+            $('img[usemap]').rwdImageMaps();
+        });   
     </script>
-
+    <!-- 20190722 E-->
     <!--[if lt IE 9]>
            <script src="http://www.forever21.co.jp/Common/Js/html5shiv.min.js" type="text/javascript"></script>
            <script src="http://www.forever21.co.jp/Common/Js/respond.min.js" type="text/javascript"></script>
@@ -112,6 +110,12 @@
         $("#headerCtrl .container").addClass('container-main');
     });
     </script>
+
+    <!-- 20190723 body 다음에 위치 S -->
+    <div class="ad_fix">
+        <img src="../Images/24_003.gif" alt="forever sale" />
+    </div>
+    <!-- 20190723 E -->
     <!-- [WELCOME SLIDER] -->
     <!-- Utility Nav Start -->
     <div id="divGlobalContainer">        
@@ -987,833 +991,75 @@
         </header>
     <!-- Header End -->
     <!-- Main Start -->
+    <!-- 20190724 columnClass 수정 S -->
+    <script type="text/javascript">
+        function fnShowDisclaimer() {
+            var message = $(".popup_content").html();
+            $.confirm({
+                title: '',
+                content: message,
+                animation: 'top',
+                closeIcon: true,
+                confirmButton: false,
+                cancelButton: false,
+                columnClass: 'col-md-7'
+            });
+        }
+    </script>
+     <!-- 20190724 columnClass 수정 E -->
     <main>
         <div id="main" class="category_wrapper">
-
-
-<style>
-img[usemap] {
-    border: none;
-    height: auto;
-    max-width: 100%;
-    width: auto;
-}
-</style>
-            <!-- 20190719 S
-            <div class="column span_16_of_16 float_none regular"> -->
-                <div id="div_category_kicker" class="category_kicker" style="display: block;">
+            <!-- 20190722 S -->
+            <style>
+            img[usemap] {
+                border: none;
+                height: auto;
+                max-width: 100%;
+                width: auto;
+            }
+            </style>
+            <!-- 20190722 E -->
+            <!-- 20190722 image 이미지 경로 바꾸기 S -->
+                <div class="category_kicker" style="display: block;">
                     <div class="column span_16_of_16 column_1">
-                        <div>
-                            <img alt="last piece 40" border="0" src="../Images/web_M3.gif" usemap="#001" width="1800" height="760"><!-- 이미지 경로 바꾸기 -->
+                        <p><img alt="web_common image" src="../Images/web_common.gif"></p>
+                        <p><img alt="black friday" src="../Images/web_coupon1.jpg"></p>
+                        <div style="display:block">
+                            <img border="0" style="width:100%;" src="../images/web_coupon2.jpg" usemap="#001" width="1800" height="892" >
                             <map name="001">
-                                <area href="#" coords="816,620,460,429" shape="rect">
+                                <area coords="654,650,1140,748" shape="rect" onfocus="this.blur()" alt="쿠폰 다운로드 받기" />
+                                <area href="#" onfocus="this.blur()" coords="736,788,1108,844" shape="rect" alt="쿠폰 유의사항" onclick="fnShowDisclaimer();" /><!-- test 이벤트 넣음 무시해주세요 -->
                             </map>
                         </div>
-                        <p>
-                            <img alt="black friday" border="0" src="../Images/web_M4.jpg" usemap="#002" width="1800" height="1522"><!-- 이미지 경로 바꾸기 -->
+                        <div>
+                            <img border="0" style="width:100%;" src="../images/web_coupon3.jpg" usemap="#002" width="1800" height="1582" >
                             <map name="002">
-                                <area alt="" href="#" coords="1022,620,776,565" shape="rect">
-                                <area target="" alt=""  href="#" coords="656,1467,410,1412" shape="rect">
-                                <area target="" alt="" href="#" coords="1475,1471,1229,1416" shape="rect">
+                                <area href="http://www.forever21.co.kr/Product/Category.aspx?br=f21&category=promo_specialprice" target='_blank' onfocus="this.blur()" coords="12,0,1784,696" shape="rect" alt="Black friday in July 80% offerDetails" />
+                                <area href="http://www.forever21.co.kr/Product/Category.aspx?&category=promo_pricepointmkd" target='_blank' onfocus="this.blur()" coords="4,736,880,1552" shape="rect"alt="Dresses 15000원" />
+                                <area href="http://www.forever21.co.kr/Product/Category.aspx?&category=promo_surpriseoffers" target='_blank' onfocus="this.blur()" coords="904,736,1792,1556" shape="rect"alt="Beach Wear" />
                             </map>
-                        </p>
-                        <div class="center_text "><a class="btn_disclaimer" onclick="fnShowDisclaimer();">유의사항 확인 ▶</a> </div>
+                        </div>
                         <div class="popup_content" style="display:none;">
-                            <div class="c_title">이벤트 기간 : 2019.04.09 ~ 2019.04.16 10AM</div>
-                            <div class="context">
-                                <ul><li>● 이미지를 클릭하여 21% 할인 쿠폰을 다운받으세요.</li>
-                                    <li>● 결제 단계에서 해당 쿠폰을 사용할 경우, 5만원 이상 구매시 정상가 상품에 21% 할인이 적용됩니다.(할인 상품 제외)</li>
-                                    <li>● 쿠폰은 프로모션 기간 내 중복 사용이 가능하나 다른 프로모션 및 쿠폰과 중복 적용되지 않으며, 이벤트 이전 구매에 대한 결제 금액 조정이 불가합니다.</li>
+                            <div class="c_title text_center fontC_5">쿠폰 유의사항</div>
+                            <div class="context bt_black" style="font-size:13px"><!-- 20190724 -->
+                                <ul>
+                                    <li>● 포에버21 온라인몰 로그인 고객에 한해 참여 가능합니다.</li>
+                                    <li>● 할인 적용상품 : 장바구니 기준 전상품 30%추가할인</li>
+                                    <li>● 한 ID당 일 1회만 참여 가능합니다.</li>
+                                    <li>● 선착순 이벤트로 조기종료 될수 있습니다.</li>
+                                    <li>● 실시간 구매 고객이 많을 경우 참여가 지연될 수 있습니다.</li>
+                                    <li>● 쿠폰 내역은 [마이페이지] – [쿠폰관리]에서 확인할 수 있습니다.</li>
+                                    <li>● 쿠폰은 중복사용 불가합니다.</li>
+                                    <li>● 쿠폰 유효기간은 7월25일(목) 23시59분59초까지 사용가능합니다.</li>
+                                    <li>● 교환/환불 시 쿠폰은 재지급 되지 않습니다.</li>
                                     <li>● 프로모션 혜택을 받으신 상품을 반품하실 경우 결제 금액만큼 환불 처리되며, 반품 수거 신청 시 반품 배송비가 차감됩니다.</li>
-                                    <li>● 온라인 단독 진행 프로모션이며, 사전 통보 없이 변경 또는 조기 종료될 수 있습니다.</li>
-                                    <li>● 쿠폰 사용방법 : 이미지 클릭시 쿠폰 자동 발급 &gt; 결제 단계에서 쿠폰 사용</li>
+                                    <li>● 해당 이벤트는 온라인 단독 진행 프로모션이며, 사전 고지 없이 변경되거나 조기 종료될 수 있습니다.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            <!-- </div>
-            20190719 S -->  
-
-            <div id="div_breadcrumb" class="breadcrumb" style="display:none;"></div>
-
-            <div class="wrapper">
-                <div class="column_wrapper c_container">
-                    <div id="div_breadcrumb" class="breadcrumb">
-                        <a href="/" class="forever21"><u>home</u></a> &gt;&nbsp;<a href="#" class="forever21" style="margin:0px 0px 0px 0px;"><u>best sellers</u></a> &gt; <a href='javascript:gocategorylist("topseller_all_women_app","f21");' class="forever21"><u>women</u></a>
-                    </div>
-                    <div class="column span_16_of_16 space category">
-                        <form>
-                            <div class="aspNetHidden">
-                                <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNjQ1NjIwMDE3ZGToOHREIywDW6ZatpGOnRfo5TGI8A==">
-                            </div>
-                            <!-- Left Navigation Start -->
-                            <div class="column span_3_of_16 c_left">
-                                <!-- SEO and Category title -->
-                                <div class="seo"><p class="seo_cat">Tシャツ/カットソー</p></div>
-                                <nav class="left_nav">
-                                    <section class="LeftMenuItem">
-                                        <!-- [DesktopRenewal] 변경 Start -->
-                                        <!-- Trending Now -->
-                                        <ul class="left_category_list">
-                                            <li style="padding-bottom:8px;border-bottom:1px solid #111;"><a href="#" title="Trending Now"><h3>Trending Now</h3></a></li>
-                                            <li>
-                                                <ul class="depth2">
-                                                    <li><a href="#" title="View All"><span>Off The Shoulder</span></a></li>
-                                                    <li><a href="#" title="Women"><span class="selected">Floral</span></a></li>
-                                                    <li><a href="#" title="Accessories"><span>Lace</span></a></li>
-                                                </ul>
-                                                <!--<script type="text/javascript"> $('.seo_cat').html('Trending Now'); </script> 20161213 -->
-                                            </li>
-                                        </ul>
-                                        <!-- [DesktopRenewal] 변경 End -->
-                                        <!-- Category list -->
-                                        <ul class="left_category_list">
-                                            <li style="padding-bottom:8px;border-bottom:1px solid #111;"><a title="Dresses" href="#"><h3>Categories</h3></a></li>
-                                            <li>
-                                                <ul class="depth2">
-                                                    <li><a href="#"><span>Bohemian</span></a></li>
-                                                    <li><a href="#"><span>Floral + Lace</span></a></li>
-                                                    <li><a href="#"><span>Dresses Under $20</span></a></li>
-                                                    <li><a href="#"><span>Casual</span></a></li>
-                                                    <li><a href="#"><span>Fit + Flare</span></a></li>
-                                                    <li><a href="#"><span>T-Shirt</span></a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </section>
-                                    <!-- [DesktopRenewal] 변경 Start -->
-                                    <!-- Filter -->
-                                    <section class="left_filter">
-                                        <section class="ac-container" style="display:block;">
-                                            <div class="filter_mobile"><span class="m_filters">Filters</span></div>
-                                            <div class="filter_desktop">
-                                                <h3  style="padding-bottom:8px;border-bottom:1px solid #111;">Filters</h3>
-                                                <!--<article class="ac-small">-->
-                                                    <!-- Size filter : Start -->
-                                                    <section class="ac-container">
-                                                        <div class="column span_16_of_16">
-                                                            <input id="ac-size" name="ac-filters" type="checkbox">
-                                                            <label for="ac-size" id="ac-title" class="span_16_of_16">size</label>
-                                                            <article class="ac-small">
-                                                                <div class="filter_by">
-                                                                    <!-- item_size filter -->
-                                                                    <ul>
-                                                                        <li><input name="f_size_X-Large" type="checkbox" checked value="X-Large" /><label><span></span>XL</label></li>
-                                                                        <li><input name="f_size_1X" id="f_size_1X" type="checkbox" value="1X" /><label><span></span>1X</label></li>
-                                                                        <li><input name="f_size_2X" id="f_size_2X" type="checkbox" value="2X" /><label><span></span>2X</label></li>
-                                                                        <li><input name="f_size_3X" id="f_size_3X" type="checkbox" value="3X" /><label><span></span>3X</label></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </article>
-                                                        </div>
-                                                    </section>
-                                                    <!-- Size filter : End -->
-                                                    <!-- color filter : Start -->
-                                                    <section class="ac-container">
-                                                    <div class="column span_16_of_16">
-                                                        <input id="ac-color" name="ac-filters" type="checkbox">
-                                                        <label for="ac-color" id="ac-title" class="span_16_of_16">color</label>
-                                                        <article class="ac-small">
-                                                            <div class="filter_by half">
-                                                                <!-- item_color filter  -->
-                                                                <ul>
-                                                                    <li><input name="f_color_black" type="checkbox" value="black" /><label><span></span>black</label></li>
-                                                                    <li><input name="f_color_grey" type="checkbox" value="grey" /><label><span></span>grey</label></li>
-                                                                    <li><input name="f_color_red" type="checkbox" value="red" /><label><span></span>red</label></li>
-                                                                    <li><input name="f_color_denim" type="checkbox" value="denim" /><label><span></span>denim</label></li>
-                                                                    <li><input name="f_color_pink" type="checkbox" value="pink" /><label><span></span>pink</label></li>
-                                                                    <li><input name="f_color_white" type="checkbox" value="white" /><label><span></span>white</label></li>
-                                                                    <li><input name="f_color_blue" type="checkbox" value="blue" /><label><span></span>blue</label></li>
-                                                                    <li><input name="f_color_green" type="checkbox" value="green" /><label><span></span>green</label></li>
-                                                                    <li><input name="f_color_brown" type="checkbox" value="brown" /><label><span></span>brown</label></li>
-                                                                    <li><input name="f_color_orange" type="checkbox" value="orange" /><label><span></span>orange</label></li>
-                                                                    <li><input name="f_color_purple" type="checkbox" value="purple" /><label><span></span>purple</label></li>
-                                                                    <li><input name="f_color_yellow" type="checkbox" value="yellow" /><label><span></span>yellow</label></li>
-                                                                </ul>
-                                                            </div>
-                                                        </article>
-                                                    </div>
-                                                    </section>
-                                                    <!-- color filter : End -->
-                                                    <!-- price filter : Start -->
-                                                    <section class="ac-container">
-                                                        <div class="column span_16_of_16">
-                                                            <input id="ac-price" name="ac-filters" type="checkbox">
-                                                            <label for="ac-price" id="ac-title" class="span_16_of_16" onclick="javascript:fnInitPriceRange();">price</label>
-                                                            <article class="ac-small">
-                                                                <div class="filter_by"> <!-- item_price filter -->
-                                                                    <div id="slider" style="display:none;">
-                                                                    </div>
-                                                                </div>
-                                                            </article>
-                                                        </div>
-                                                    </section>
-                                                    <!-- price filter : End -->
-                                                    <!-- By Style filter : Start -->
-                                                    <section class="ac-container">
-                                                        <div class="column span_16_of_16">
-                                                            <input id="ac-style" name="ac-filters" type="checkbox">
-                                                            <label for="ac-style" id="ac-title" class="span_16_of_16">袖丈</label>
-                                                            <article class="ac-small">
-                                                                <div class="filter_by"><!-- brandlist filter -->
-                                                                    <ul>
-                                                                        <li><input name="" type="checkbox" value="ベアトップ/チューブトップ" /><label><span></span>ベアトップ/チューブトップ</label></li>
-                                                                        <li><input name="" type="checkbox" value="ノースリーブ" /><label><span></span>ノースリーブ</label></li>
-                                                                        <li><input name="" type="checkbox" value="半袖" /><label><span></span>半袖</label></li>
-                                                                        <li><input name="" type="checkbox" value="７分袖" /><label><span></span>７分袖</label></li>
-                                                                        <li><input name="" type="checkbox" value="長袖" /><label><span></span>長袖</label></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </article>
-                                                        </div>
-                                                    </section>
-                                                    <!-- By Style filter : End -->
-                                                    <!-- By SleeveLength filter : Start -->
-                                                    <section class="ac-container">
-                                                        <div class="column span_16_of_16">
-                                                            <input id="ac-sleeve" name="ac-filters" type="checkbox" />
-                                                            <label for="ac-sleeve" id="ac-title" class="span_16_of_16">スタンダード</label>
-                                                            <article class="ac-small">
-                                                                <div class="filter_by">
-                                                                    <ul>
-                                                                        <li><input name="" type="checkbox" value="スタンダード" /><label><span></span>スタンダード</label></li>
-                                                                        <li><input name="" type="checkbox" value="ショート" /><label><span></span>ショート</label></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </article>
-                                                        </div>
-                                                    </section>
-                                                    <!-- By SleeveLength filter : End -->
-                                                    <!-- By Length filter : Start -->
-                                                    <section class="ac-container">
-                                                        <div class="column span_16_of_16">
-                                                            <input id="ac-length" name="ac-filters" type="checkbox" />
-                                                            <label for="ac-length" id="ac-title" class="span_16_of_16">ネックライン</label>
-                                                            <article class="ac-small">
-                                                                <div class="filter_by">
-
-                                                                    <ul>
-                                                                        <li><input name="" type="checkbox" value="Uネック/ラウンド" /><label><span></span>Uネック/ラウンド</label></li>
-                                                                        <li><input name="" type="checkbox" value="Vネック" /><label><span></span>Vネック</label></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </article>
-                                                        </div>
-                                                    </section>
-                                                    <!-- By Length filter : End -->
-                                                    <!-- Wear To filter : Start -->
-                                                    <section class="ac-container">
-                                                        <div class="column span_16_of_16">
-                                                            <input id="ac-wear" name="ac-filters" type="checkbox" />
-                                                            <label for="ac-wear" id="ac-title" class="span_16_of_16">素材 </label>
-                                                            <article class="ac-small">
-                                                                <div class="filter_by">
-
-                                                                    <ul>
-                                                                        <li><input name="" type="checkbox" value="綿/混紡" /><label><span></span>綿/混紡</label></li>
-                                                                        <li><input name="" type="checkbox" value="シフォン/シルク" /><label><span></span>シフォン/シルク</label></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </article>
-                                                        </div>
-                                                    </section>
-                                                    <!-- Wear To filter : End -->
-                                                    <!-- Trend filter : Start -->
-                                                    <section class="ac-container">
-                                                        <div class="column span_16_of_16">
-                                                            <input id="ac-trend" name="ac-filters" type="checkbox" />
-                                                            <label for="ac-trend" id="ac-title" class="span_16_of_16">パターン/デザイン</label>
-                                                            <article class="ac-small">
-                                                                <div class="filter_by">
-                                                                    <ul>
-                                                                        <li><input name="" type="checkbox" value="迷彩/カモフラージュ" /><label><span></span>迷彩/カモフラージュ</label></li>
-                                                                        <li><input name="" type="checkbox" value="無地" /><label><span></span>無地</label></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </article>
-                                                        </div>
-                                                    </section>
-                                                    <!-- Trend filter : End -->
-                                                <!--</article>-->
-                                            </div>
-                                        </section>
-                                    </section>
-                                    <!-- [DesktopRenewal] 변경 End -->
-                                    <!-- eSpot -->
-                                </nav>
-                            </div>
-                            <!-- Left Navigation End -->
-                            <!-- Right Content Start -->
-                            <div class="column span_13_of_16 c_right float_right">
-                                <span id="ctl00_MainContent_spImageNControl" class="brdedshop_title"></span>
-                                <div class="detailSearch" style="display:none;">
-                                    <div style="height:20px">
-                                        <div style="float:left;"><span id="ctl00_MainContent_lbSearchTitle">Women</span> 詳細検索</div>
-                                        <div style="float:right"><a href="javascript:fnViewDetailSearch()" class="btn"><img id="img_shownhide" src="http://www.forever21.co.jp/images/list/btn_fd_show.gif" border="0" alt="" style="width:15px;height:15px"></a></div>
-                                    </div>
-                                    <div class="detaileBox">
-                                        <div id="divDetailSearch" class="DetailSearch">
-                                            <div class="float_right">
-                                                <button type="button" id="btnCancelDetailSearch" onclick="cancelDetailSearch()">すべて選択解除</button>
-                                                <button type="button" id="btnGoDetailSearch" onclick="goDetailSearch()">選択条件で検索</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="RegularCategory"><!-- style="padding-top:5px;" -->
-                                    <!-- [DesktopRenewal] 추가 Best Seller : Start -->
-                                    <div class="column span_16_of_16 new_besting_list">
-                                        <!-- What's New Start -->
-                                        <div class="column span_16_of_16">
-                                            <!--<div class="dividedline"><span>New Arrivals</span><p class="view_more"><a href="#">view more</a></p></div>-->
-                                            <div id="owl-best-list" class="owl-carousel owl-theme uk-margin-bottom" style="opacity: 1; display: block;">
-                                                <!-- product_grid Start -->
-                                                <div class="product_grid c_list item uk-text-center" style="min-width: 100%">
-                                                    <!-- loop 5개 - Product Item Start -->
-                                                    <div class="product_item gtm_prod">
-                                                        <div class="item_pic">
-
-                                                            <div class="m_qv" alt="quick view" onclick="fnShowProductPopup();"><span class="quick_view">미리보기</span></div>
-
-                                                            <div class="right_tag"><p class=""><img src="http://www.forever21.com/images/en/tag/HolidayDeal.png" alt="HolidayDealTag" /></p></div>
-                                                            <a href="#">
-                                                                <img src="http://img.forever21.co.kr/images/default_330/00325797-01.jpg" alt="NYCグラフィックトップ" /><br />
-                                                            </a>
-                                                        </div>
-                                                        <a href="#">
-                                                            <div class="item_info">
-                                                                <p class="item_name_c">NYCグラフィックトップ</p>
-                                                                <div class="price_c">￥2,490(税抜)</div>
-                                                                <div class="event_msg"></div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                    <!-- loop 5개 - Product Item End -->
-
-                                                    <div class="product_item gtm_prod" id="2000217464">
-                                                        <div class="item_pic">
-                                                            <div class="right_tag red_sale_tag"><span class="red_sale">50%<span class="small_text">OFF</span></span></div>
-                                                            <a href="#">
-                                                                <img id="img_2000217464" src="http://www.forever21.com/images/default_330/00217464-01.jpg" alt="Mickey Mouseヘザースウェット" /><br />
-                                                            </a>
-                                                        </div>
-                                                        <a href="#">
-                                                            <div class="item_info">
-                                                                <p class="item_name_c">Mickey Mouseヘザースウェット</p>
-                                                                <div class="price_c">￥2,790(税抜)</div>
-                                                                <div class="event_msg"></div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product_item gtm_prod">
-                                                        <div class="item_pic">
-                                                            <div class="right_tag"><img src="http://2.forever21.com/r/N/lBpQEh8AI.png" alt="Season Off" /></div>
-                                                            <a href="#">
-                                                                <img id="img_2000214985" src="http://www.forever21.com/images/default_330/00214985-01.jpg" alt="ローカットボクシークロップTシャツ" /><br />
-                                                            </a>
-                                                        </div>
-                                                        <a href="#">
-                                                            <div class="item_info">
-                                                                <p class="item_name_c">ローカットボクシークロップTシャツ</p>
-                                                                <div class="price_c">￥1,790(税抜)</div>
-                                                                <div class="event_msg"></div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product_item gtm_prod">
-                                                        <div class="item_pic">
-                                                            <a href="#">
-                                                                <img id="img_2000193803" src="http://www.forever21.com/images/default_330/00193803-01.jpg" alt="Aグラフィックローカットクロップパーカー" /><br />
-                                                            </a>
-                                                        </div>
-                                                        <a href="#">
-                                                            <div class="item_info">
-                                                                <p class="item_name_c">Aグラフィックローカットクロップパーカー</p>
-                                                                <div class="price_c">￥1,990(税抜)</div>
-                                                                <div class="event_msg"></div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product_item gtm_prod">
-                                                        <div class="item_pic">
-                                                            <a href="#">
-                                                                <img id="img_2000191937" src="http://www.forever21.com/images/default_330/00191937-01.jpg" alt="ハートピザパッチスウェット" /><br />
-                                                            </a>
-                                                        </div>
-                                                        <a href="#">
-                                                            <div class="item_info">
-                                                                <p class="item_name_c">ハートピザパッチスウェット</p>
-                                                                <div class="price_c">￥1,990(税抜)</div>
-                                                                <div class="event_msg"></div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <!-- product_grid End -->
-                                                <!-- product_grid Start -->
-                                                <div class="product_grid c_list item uk-text-center" style="min-width: 100%">
-                                                    <!-- loop 5개 - Product Item Start -->
-                                                    <div class="product_item gtm_prod" id="2000192060">
-                                                        <div class="item_pic">
-                                                            <a href="#">
-                                                                <img id="img_2000192060" src="http://www.forever21.com/images/default_330/00192060-01.jpg" alt="NYCグラフィックトップ" /><br />
-                                                            </a>
-                                                        </div>
-                                                        <a href="#">
-                                                            <div class="item_info">
-                                                                <p class="item_name_c">NYCグラフィックトップ</p>
-                                                                <div class="price_c">￥2,490(税抜)</div>
-                                                                <div class="event_msg"></div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                    <!-- loop 5개 - Product Item End -->
-
-                                                    <div class="product_item gtm_prod">
-                                                        <div class="item_pic">
-                                                            <a href="#">
-                                                                <img id="img_2000217464" src="http://www.forever21.com/images/default_330/00217464-01.jpg" alt="Mickey Mouseヘザースウェット" /><br />
-                                                            </a>
-                                                        </div>
-                                                        <a href="#">
-                                                            <div class="item_info">
-                                                                <p class="item_name_c">Mickey Mouseヘザースウェット</p>
-                                                                <div class="price_c">￥2,790(税抜)</div>
-                                                                <div class="event_msg"></div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product_item gtm_prod">
-                                                        <div class="item_pic">
-                                                            <a href="#">
-                                                                <img src="http://www.forever21.com/images/default_330/00214985-01.jpg" alt="ローカットボクシークロップTシャツ" /><br />
-                                                            </a>
-                                                        </div>
-                                                        <a href="#">
-                                                            <div class="item_info">
-                                                                <p class="item_name_c">ローカットボクシークロップTシャツ</p>
-                                                                <div class="price_c">￥1,790(税抜)</div>
-                                                                <div class="event_msg"></div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product_item gtm_prod">
-                                                        <div class="item_pic">
-                                                            <a href="#">
-                                                                <img src="http://www.forever21.com/images/default_330/00193803-01.jpg" alt="Aグラフィックローカットクロップパーカー" /><br />
-                                                            </a>
-                                                        </div>
-                                                        <a href="#">
-                                                            <div class="item_info">
-                                                                <p class="item_name_c">Aグラフィックローカットクロップパーカー</p>
-                                                                <div class="price_c">￥1,990(税抜)</div>
-                                                                <div class="event_msg"></div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product_item gtm_prod" id="2000191937">
-                                                        <div class="item_pic">
-                                                            <a href="#">
-                                                                <img id="img_2000191937" src="http://www.forever21.com/images/default_330/00191937-01.jpg" alt="ハートピザパッチスウェット" /><br />
-                                                            </a>
-                                                        </div>
-                                                        <a href="#">
-                                                            <div class="item_info">
-                                                                <p class="item_name_c">ハートピザパッチスウェット</p>
-                                                                <div class="price_c">￥1,990(税抜)</div>
-                                                                <div class="event_msg"></div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <!-- product_grid End -->
-                                            </div>
-                                        </div>
-                                        <!-- What's New End -->
-
-                                    </div>
-                                    <!-- [DesktopRenewal] 추가 Best Seller : End -->
-                                    <!-- Pagenation Top Start =-->
-                                    <div id="ctl00_MainContent_top_filter" class="pagination top wo_filter">
-                                        <div id="div_totalCount" class="center_text">438 products </div>
-                                        <div class="c_sort">
-                                            <!-- Sort By Start =-->
-                                            <dl class="dropdown">
-                                                <dt><a><span id="span_sort">sort by</span></a></dt>
-                                                <dd>
-                                                    <ul>
-                                                        <li><a href="javascript:fnChangeSort('f21','topseller_all_women_app','60','1','');">新着順</a></li>
-                                                        <li><a href="javascript:fnChangeSort('f21','topseller_all_women_app','60','3','');">価格の低い順</a></li>
-                                                        <li><a href="javascript:fnChangeSort('f21','topseller_all_women_app','60','2','');">価格の高い順</a></li>
-                                                        <li><a href="javascript:fnChangeSort('f21','topseller_all_women_app','60','4','');">人気順</a></li>
-                                                    </ul>
-                                                </dd>
-                                            </dl>
-                                            <!-- Sort By End =-->
-                                        </div>
-                                        <div class="c_sort" style="padding-left:10px">
-                                            <!-- Sort By Start =-->
-                                            <dl class="dropdown">
-                                                <dt><a><span id="span_price">Price By</span></a></dt>
-                                                <dd>
-                                                    <ul>
-                                                        <li><a href="javascript:fnChangePrice('f21','topseller_all_women_app','60','','');">Price By</a></li>
-                                                        <li><a href="javascript:fnChangePrice('f21','topseller_all_women_app','60','','0');">All</a></li>
-                                                        <li><a href="javascript:fnChangePrice('f21','topseller_all_women_app','60','','1');">１，０００円未満</a></li>
-                                                        <li><a href="javascript:fnChangePrice('f21','topseller_all_women_app','60','','2');">２，０００円未満</a></li>
-                                                        <li><a href="javascript:fnChangePrice('f21','topseller_all_women_app','60','','3');">３，０００円未満</a></li>
-                                                        <li><a href="javascript:fnChangePrice('f21','topseller_all_women_app','60','','4');">４，０００円未満</a></li>
-                                                        <li><a href="javascript:fnChangePrice('f21','topseller_all_women_app','60','','5');">４，０００円以上</a></li>
-                                                    </ul>
-                                                </dd>
-                                            </dl>
-                                            <!-- Sort By End =-->
-                                        </div>
-                                        <div class="c_pagination">
-                                            <div class="c_view"><dl class="dropdown"><dt><a><span>view 60</span></a></dt><dd><ul><li><a href="#">View 120</a></li></ul></dd></dl></div><div class="c_pagination_list"><span class="p_prev"><button disabled="" value="back"><span class="icon_e_prev_arrow"></span></button></span><span class="p_number"><button class="active" >1</button><button>2</button><button>3</button><button>4</button><span class="etc">...</span><button>8</button></span><span class="p_prev"><button><span class="icon_e_next_arrow"></span></button></span></div><span></span>
-                                        </div>
-                                    </div>
-                                    <!-- Pagenation Top End =-->
-
-                                    <div class="product_grid c_list">
-                                        <!-- Product Item Start -->
-                                        <div class="product_item gtm_prod" id="2000194562" data-name="フラワー刺繍バックライダース" data-sku="00194562" data-product-list="category topseller_all_women_app pagesize 60" data-price="4309.00" data-retail="4309.00">
-                                            <div class="item_pic">
-                                                <div class="NewItemTag4"><p class="deal_tag">DEAL</p></div><!-- [DesktopRenewal] NEW CMS > 태그관리에서 스티커 태그 설정  -->
-                                                    <div class="m_qv" alt="quick view" onclick="fnShowProductPopup();"><span class="quick_view">QUICK VIEW</span></div><a href="#"><div value="2000194562"><img src="http://www.forever21.com/images/2_side_330/00194562-02.jpg" alt="4_full_330"><img src="http://www.forever21.com/images/default_330/00194562-02.jpg" alt="フラワー刺繍バックライダース" style="opacity: 1; display: inline-block;"></div></a></div><div id="category_wishlist"><a class="wishlist_heart" alt="add to wishlist" style=""><span class="add_wishlist2"><span class="icon_t_wishlist icon-wish iWish" id="wish_2000194562_02"></span></span></a></div>
-                                                    <a href="#">
-                                                        <div class="item_info">
-                                                            <p class="brand_name_p"></p>
-                                                            <p class="item_name_c">フラワー刺繍バックライダース</p>
-                                                            <div class="price_c"><span class="price_c t_now">￥3,990 (税抜) </span></div>
-                                                            <input name="ctl00$MainContent$rptProductList$ctl00$hdProductId" type="hidden" id="ctl00_MainContent_rptProductList_ctl00_hdProductId">
-                                                            <input name="ctl00$MainContent$rptProductList$ctl00$hdProductSKUId" type="hidden" id="ctl00_MainContent_rptProductList_ctl00_hdProductSKUId">
-                                                            <input name="ctl00$MainContent$rptProductList$ctl00$hdColorCode" type="hidden" id="ctl00_MainContent_rptProductList_ctl00_hdColorCode">
-                                                            <div class="m_text">more color +</div>
-                                                        </div>
-                                                    </a>
-                                            <div class="item_color">
-                                                <ul><li class="selected"><img src="http://www.forever21.com/images/sw_22//00194562-02.jpg" onclick="javascript:fnShowProductPopup();" alt="red"></li></ul>
-                                            </div>
-                                            <div class="badget_wrapper">
-
-                                            </div>
-                                        </div>
-                                        <!-- Product Item End -->
-                                        <!-- Product Item Start -->
-                                        <div class="product_item gtm_prod" data-name="[LOV]Vネックロングニット">
-                                            <div class="item_pic"><div class="m_qv" alt="quick view" onclick="fnShowProductPopup();"><span class="quick_view">QUICK VIEW</span></div><a href="#"><div value="2000199128"><img src="http://www.forever21.com/images/2_side_330/00199128-05.jpg" alt="4_full_330"><img src="http://www.forever21.com/images/default_330/00199128-05.jpg" alt="[LOV]Vネックロングニット" style="opacity: 1; display: inline-block;"></div></a></div><div id="category_wishlist"><a class="wishlist_heart" alt="add to wishlist" style=""><span class="add_wishlist2"><span class="icon_t_wishlist icon-wish iWish"></span></span></a></div>
-                                            <a href="#">
-                                                <div class="item_info">
-                                                    <p class="brand_name_p"></p>
-                                                    <p class="item_name_c">[CONTEMPORARY]Vネックロングニット</p>
-                                                    <div class="price_c"><span class="price_c t_now">￥2,290 (税抜) </span></div>
-                                                    <input name="ctl00$MainContent$rptProductList$ctl01$hdProductId" type="hidden" id="ctl00_MainContent_rptProductList_ctl01_hdProductId">
-                                                    <input name="ctl00$MainContent$rptProductList$ctl01$hdProductSKUId" type="hidden" id="ctl00_MainContent_rptProductList_ctl01_hdProductSKUId">
-                                                    <input name="ctl00$MainContent$rptProductList$ctl01$hdColorCode" type="hidden" id="ctl00_MainContent_rptProductList_ctl01_hdColorCode">
-                                                    <div class="m_text">more color +</div>
-                                                </div>
-                                            </a>
-                                            <div class="item_color">
-                                                <ul><li><img src="http://www.forever21.com/images/sw_22//00199128-04.jpg" onclick="javascript:fnShowProductPopup();" alt="red"></li> <li class="selected"><img src="http://www.forever21.com/images/sw_22//00199128-05.jpg" onclick="javascript:fnShowProductPopup();" alt="red"></li> <li><img src="http://www.forever21.com/images/sw_22//00199128-06.jpg" onclick="javascript:fnShowProductPopup();" alt="red"></li></ul>
-                                            </div>
-                                            <div class="badget_wrapper">
-
-                                            </div>
-                                        </div>
-                                        <!-- Product Item End -->
-                                        <!-- Product Item Start -->
-                                        <div class="product_item gtm_prod">
-                                            <div class="item_pic"><div class="m_qv" alt="quick view" onclick="fnShowProductPopup();"><span class="quick_view">QUICK VIEW</span></div><a href="#"><div><img src="http://www.forever21.com/images/2_side_330/00198302-03.jpg" alt="4_full_330"><img src="http://www.forever21.com/images/default_330/00198302-03.jpg" alt="レースアップニットワンピース" style="opacity: 1; display: inline-block;"></div></a></div><div id="category_wishlist"><a class="wishlist_heart" alt="add to wishlist" style=""><span class="add_wishlist2"><span class="icon_t_wishlist icon-wish iWish" id="wish_2000198302_03"></span></span></a></div>
-                                            <a href="#">
-                                                <div class="item_info">
-                                                    <p class="brand_name_p"></p>
-                                                    <p class="item_name_c">レースアップニットワンピース</p>
-                                                    <div class="price_c"><span class="price_c t_now">￥2,990 (税抜) </span></div>
-                                                    <input name="ctl00$MainContent$rptProductList$ctl03$hdProductId" type="hidden" id="ctl00_MainContent_rptProductList_ctl03_hdProductId">
-                                                    <input name="ctl00$MainContent$rptProductList$ctl03$hdProductSKUId" type="hidden" id="ctl00_MainContent_rptProductList_ctl03_hdProductSKUId">
-                                                    <input name="ctl00$MainContent$rptProductList$ctl03$hdColorCode" type="hidden" id="ctl00_MainContent_rptProductList_ctl03_hdColorCode">
-                                                    <div class="m_text">more color +</div>
-                                                </div>
-                                            </a>
-                                            <div class="item_color">
-                                                <ul><li class="selected"><img src="http://www.forever21.com/images/sw_22//00198302-03.jpg" onclick="javascript:fnShowProductPopup();" alt="red"></li> <li><img src="http://www.forever21.com/images/sw_22//00198302-04.jpg" onclick="javascript:fnShowProductPopup();" alt="red"></li></ul>
-                                            </div>
-                                            <div class="badget_wrapper">
-
-                                            </div>
-                                        </div>
-                                        <!-- Product Item End -->
-                                        <!-- Product Item Start -->
-                                        <div class="product_item gtm_prod">
-                                            <div class="item_pic"><div class="m_qv" alt="quick view" onclick="fnShowProductPopup();"><span class="quick_view">QUICK VIEW</span></div><a href="#"><div class="NewItemTag5">BACK IN STOCK</div><div><img class="lazy" data-original="http://www.forever21.com/images/3_back_330/00214604-05.jpg" alt="3_back_330" src="http://www.forever21.com/images/2_side_330/00214604-05.jpg" style="display: inline;"><img class="lazy" alt="[BS][AC]Low Impact アシッドウォッシュスポーツブラ" src="http://www.forever21.com/images/default_330/00214604-05.jpg" style="display: inline-block; opacity: 1;"></div></a></div><div id="category_wishlist"><a class="wishlist_heart" alt="add to wishlist" style=""><span class="add_wishlist2"><span class="icon_t_wishlist icon-wish iWish"></span></span></a></div>
-                                            <a href="#">
-                                                <div class="item_info">
-                                                    <p class="brand_name_p"></p>
-                                                    <p class="item_name_c">Low Impact アシッドウォッシュスポーツブラ</p>
-                                                    <div class="price_c"><span class="price_c t_now">￥1,490 (税抜) </span></div>
-                                                    <input name="ctl00$MainContent$rptProductList$ctl18$hdProductId" type="hidden" id="ctl00_MainContent_rptProductList_ctl18_hdProductId">
-                                                    <input name="ctl00$MainContent$rptProductList$ctl18$hdProductSKUId" type="hidden" id="ctl00_MainContent_rptProductList_ctl18_hdProductSKUId">
-                                                    <input name="ctl00$MainContent$rptProductList$ctl18$hdColorCode" type="hidden" id="ctl00_MainContent_rptProductList_ctl18_hdColorCode">
-                                                    <div class="m_text">more color +</div>
-                                                </div>
-                                            </a>
-                                            <div class="item_color">
-                                                <ul><li class="selected"><img class="lazyColorChip" onclick="javascript:fnShowProductPopup();" alt="red" src="http://www.forever21.com/images/sw_22//00214604-05.jpg" style="display: inline;"></li></ul>
-                                            </div>
-                                            <div class="badget_wrapper">
-                                                <div class="event_msg"><font color="#808080">Sports</font></div>
-                                            </div>
-                                        </div>
-                                        <!-- Product Item End -->
-                                        <!-- Product Item Start -->
-                                        <div class="product_item gtm_prod">
-                                            <div class="item_pic"><div class="m_qv" alt="quick view" onclick="fnShowProductPopup();"><span class="quick_view">QUICK VIEW</span></div><a href="#"><div class="NewItemTag5">LOW STOCK</div><div><img id="image_2000213436" class="lazy" src="http://www.forever21.com/images/2_side_330/00213436-05.jpg" style="display: inline;"><img class="lazy" src="http://www.forever21.com/images/default_330/00213436-05.jpg" style="display: inline-block; opacity: 1;"></div></a></div><div id="category_wishlist"><a class="wishlist_heart" alt="add to wishlist" style=""><span class="add_wishlist2"><span class="icon_t_wishlist icon-wish iWish"></span></span></a></div>
-                                            <a href="#">
-                                                <div class="item_info">
-                                                    <p class="brand_name_p"></p>
-                                                    <p class="item_name_c">リブVネックニット</p>
-                                                    <div class="price_c"><span class="price_c t_now">￥1,200 (税抜) </span></div>
-                                                    <input name="ctl00$MainContent$rptProductList$ctl24$hdProductId" type="hidden" id="ctl00_MainContent_rptProductList_ctl24_hdProductId">
-                                                    <input name="ctl00$MainContent$rptProductList$ctl24$hdProductSKUId" type="hidden" id="ctl00_MainContent_rptProductList_ctl24_hdProductSKUId">
-                                                    <input name="ctl00$MainContent$rptProductList$ctl24$hdColorCode" type="hidden" id="ctl00_MainContent_rptProductList_ctl24_hdColorCode">
-                                                    <div class="m_text">more color +</div>
-                                                </div>
-                                            </a>
-                                            <div class="item_color">
-                                                <ul><li class="selected"><img class="lazyColorChip" onclick="javascript:fnShowProductPopup();" alt="red" src="http://www.forever21.com/images/sw_22//00213436-05.jpg" style="display: inline;"></li></ul>
-                                            </div>
-                                            <div class="badget_wrapper">
-                                                <div class="event_msg">HOLIDAY DEAL</div>
-                                            </div>
-                                        </div>
-                                        <!-- Product Item End -->
-                                    </div>
-                                    <!-- Item Gird End =-->
-                                    <!-- Pagination Bottom Start =-->
-                                    <div id="ctl00_MainContent_bottom_filter" class="c_pagination bottom">
-                                        <div class="c_view"><dl class="dropdown"><dt><a><span>view 60</span></a></dt><dd><ul><li><a href="#">View 30</a></li><li><a href="#">View 60</a></li><li><a href="#">View 120</a></li></ul></dd></dl></div><div class="c_pagination_list"><span class="p_prev"><button><span class="icon_e_prev_arrow"></span></button></span><span class="p_number"><button class="active">1</button><button>2</button><button>3</button><button>4</button><span class="etc">...</span><button>8</button></span><span class="p_prev"><button><span class="icon_e_next_arrow"></span></button></span></div><span></span>
-                                    </div>
-                                    <!-- Pagination Bottom End =-->
-                                </div>
-                            </div>
-                            <script type="text/javascript">
-                                function fnShowProductPopup() {
-                                    var message = $("#curalate-photo-detail-container").html();
-                                    $.confirm({
-                                        title: '',
-                                        content: message,
-                                        animation: 'top',
-                                        closeIcon: true,
-                                        confirmButton: false,
-                                        cancelButton: false,
-                                        columnClass: 'col-md-9'
-                                    });
-                                }
-                             
-                            </script>
-                             <script type="text/javascript">
-                               
-                                $(function() {
-                                    $('.closeIcon').click(function() {
-                                        alert("a");
-                                        $('.content-pane').style('display','none')
-                                    });
-                                });
-                            </script>
-                            <!-- popup : Start -->
-                            <div class="closeIcon"></div>
-                            <div class="content-pane" id="curalate-photo-detail-container" style="display:none">
-                                <!-- Itme Thumnail -->
-                                <div class="column span_1_of_16 pdp_thumbnail">
-                                    <ul id="pdp_thumbnail">
-                                        <li><a href="#"><img src="http://img.forever21.co.kr/images/1_front_58/00325797-01.jpg" class="loaded"></a></li>
-                                        <li><a href="#"><img src="http://img.forever21.co.kr/images/2_side_58/00325797-01.jpg" class="loaded"></a></li>
-                                        <li><a href="#"><img src="http://img.forever21.co.kr/images/3_back_58/00325797-01.jpg" class="loaded"></a></li>
-                                        <li style="display: none;"><a href="#"><img src="http://img.forever21.co.kr/images/4_full_58/00325797-01.jpg"></a></li>
-                                        <li style="display: none;"><a href="#"><img src="http://img.forever21.co.kr/images/5_detail_58/00325797-01.jpg"></a></li>
-                                    </ul>
-                                </div>
-                                <!-- Item Main Image -->
-                                <div class="column span_7_of_16 pdp_zoom">
-                                    <img id="productImage" class="ItemImage Main loaded" title="" src="http://img.forever21.co.kr/images/1_front_750/00325797-01.jpg" alt="[UNDERWEAR]심리스 플로럴 레이스 브라렛" style="border-width:0px;padding-left: 0px;">
-                                    <!-- Social Icons -->
-                                    <div class="pdp_social">
-                                        <a href="javascript:fnShareSNS('facebook', 'http%3a%2f%2fwww.forever21.co.kr%2fProduct%2fProduct_pop.aspx%3fbr%3df21%26category%3dbestseller_all_clothing%26productid%3d1000325797%26variantid%3d', '[FOREVER21] 심리스 플로럴 레이스 브라렛 ₩13,000', '- 플로럴 레이스 트리밍으로 포인트를 준 심리스&nbsp;브라렛입니다.');"><span class="icon_facebook"></span></a>
-                                        <a href="javascript:fnShareSNS('twitter', 'http://www.forever21.co.kr/Product/Product.aspx?BR=f21&amp;Category=f21&amp;ProductID=1000325797', '[FOREVER21] 심리스 플로럴 레이스 브라렛 ₩13,000 http://www.forever21.co.kr/Product/Product.aspx?BR=f21&amp;Category=f21&amp;ProductID=1000325797', '');"><span class="icon_twitter"></span></a>
-                                        <a href="javascript:fnShareSNS('pinterest', 'http%3a%2f%2fwww.forever21.co.kr%2fProduct%2fProduct_pop.aspx%3fbr%3df21%26category%3dbestseller_all_clothing%26productid%3d1000325797%26variantid%3d', 'http%3a%2f%2fimg.forever21.co.kr%2fimages%2f1_front_750%2f00325797-01.jpg', '[FOREVER21] 심리스 플로럴 레이스 브라렛 ₩13,000');"><span class="icon_pinterest"></span></a>
-                                    </div>
-                                </div>
-                            
-                                <!-- Item Information -->
-                                <div class="column span_7_of_16 pdp_info float_right">
-                                    <div class="pdp_title">
-                                    <div id="selectoption"></div>
-                                        <h1 class="item_name_p">심리스 플로럴 레이스 브라렛</h1>
-                                        <div class="price_p">
-                                            <span itemprop="offerDetails" itemscope="" itemtype="http://data-vocabulary.org/Offer"><span id="spanProductPrice" itemprop="price">₩13,000<meta itemprop="currency" content="KOR"></span></span>
-                                            <span><span id="spanProductPoint" class="point"><i>p</i>130</span></span>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="pdp_option">
-                                        <!-- Item Color -->
-                                        <div class="color_p">
-                                            <div>
-                                                <label>Color</label>
-                                                <span id="spanSelectedColorName">White</span>
-                                            </div>
-                                            <div class="item_color">
-                                                <ul id="ulProductColor">
-                                                    <li id="colorid_01" class="colorOpt selected"><a href="javascript:fnChangeColor('bestseller_all_clothing','1000325797','01','White');"><img src="http://img.forever21.co.kr/images/sw_22/white.jpg" class="loaded"></a></li><li id="colorid_02" class="colorOpt"><a href="javascript:fnChangeColor('bestseller_all_clothing','1000325797','02','Black');"><img src="http://img.forever21.co.kr/images/sw_22/black.jpg" class="loaded"></a></li><li id="colorid_05" class="colorOpt"><a href="javascript:fnChangeColor('bestseller_all_clothing','1000325797','05','Nude');"><img src="http://img.forever21.co.kr/images/sw_22/00325797-05.jpg" class="loaded"></a></li>
-                                                </ul>
-                                                <div class="tooltip tooltip_color" style="display:none;">컬러를 선택하세요</div>
-                                            </div>
-                                        </div>
-                                        <!-- Item Size -->
-                                        <div class="size_p">
-                                            <div>
-                                                <label>Size</label>
-                                            </div>
-                                            <div class="item_size">
-                                                <ul id="ulProductSize">
-                                                    <li onclick="fnChangeSize('size_1','');"><input id="size_1" type="checkbox" value="1"><label for="size_1">S/M</label></li><li onclick="fnChangeSize('size_2','');"><input id="size_2" type="checkbox" value="2"><label for="size_2">M/L</label></li>
-                                                </ul>
-                                            </div>
-                                            <div class="tooltip tooltip_size" style="display:none;">사이즈를 선택하세요</div>
-                                            <div class="restriction_msg" style="display:none"></div>
-                                        </div>
-                            
-                                        <!-- Quantity -->
-                                        <div id="pdp_btnForm">
-                                            <!-- Button -->
-                  
-                                            <div class="btn_addtocart">
-                                                <div class="btn_cart space_0">
-                                                    <button id="addtobag" onclick="fnItemAddCart(); return false;"><span>쇼핑카트</span></button>
-                                                </div>
-                                                <div class="btn_cart">
-                                                    <button class="gray_bg fontC_5"><span>바로구매</span></button>
-                                                </div>
-                                                <div class="btn_cart">
-                                                    <button class="naver_pay icon_n_pay"></button>
-                                                </div>   
-                                                <div id="divAddWishList2">
-                                                    <div  class="span_6_of_16 text_left space_1 top">
-                                                        <span class="icon_t_wishlist icon-wish iWish" id="wish_2000194562_02" data-item="{&quot;pid&quot;:&quot;2000194562&quot;, &quot;ccd&quot;:&quot;02&quot;}"></span>
-                                                        <span id="txtWishList" style="cursor:pointer;">위시리스트에 추가</span>
-                                                    </div>
-                                                    <div class="event_msg column space_5 top span_10_of_16">
-                                                        3만원 이상 구매 시 무료배송 <br /><br />
-                                                    </div>
-                                                </div>
-                                            <!-- Button -->
-                                        </div>
-                                        <!-- Fast Track Start-->
-                                        <!-- Wait List Email -->
-                                        <div class="column span_16_of_16 space_20 bottom" id="fastTrack_form" style="display:none">
-                                            <div class="highlight input">
-                                                <div class="column span_2_of_16 space_10"><h4><strong>이메일</strong></h4></div>
-                                                <div class="column span_5_of_16">
-                                                    <input id="tbEmailAddress_Waitlist" type="email" style="width:100%; height:36px;" onclick="$('.tooltip.tooltip_email').css('display', 'none');">
-                                                    <div class="tooltip tooltip_email" style="display:none;">이메일 주소를 확인해주세요.</div>
-                                                </div>
-                                                <div class="column span_1_of_16 space_10"></div>
-                                                <div class="column span_2_of_16 space_10"><h4><strong>휴대폰</strong></h4></div>
-                                                <div class="column span_6_of_16">
-                                                    <input id="tbMobilePhoneNumber_Waitlist" type="text" onclick="$('.tooltip.tooltip_phone').css('display', 'none'); $('.tooltip.tooltip_email').css('display', 'none');">
-                                                    <div class="tooltip tooltip_phone" style="display:none;">휴대폰 번호를 확인해주세요.</div>
-                                                </div>
-                                                <div class="column span_16_of_16 space_5">
-                                                    <div class="space_10 bottom column span_8_of_16">
-                                                        <input type="checkbox" id="chkPrivercy_Waitlist" name="chkPrivercy_Waitlist" value="" checked="checked" onclick="fnChkPrivercyWaitList(event);"><label for="chkPrivercy_Waitlist" class="space_5"><span></span>개인정보 보호 동의(필수)</label>
-                                                        <div class="tooltip tooltip_privercy" style="display:none;">개인정보 동의 확인</div>
-                                                        <p class="space_10 left">&nbsp;<a target="_blank" href="/Company/Privacy.aspx?br=f21">개인정보 정책</a></p>
-                                                    </div>
-                                                    <div class="column span_8_of_16"><input type="checkbox" id="chkSubscribe_Waitlist" name="chkSubscribe_Waitlist" value="" checked="checked"><label for="chkSubscribe_Waitlist" class="space_5"><span></span>광고성 메일 수신 동의(선택)</label></div>
-                                                </div>
-                                                <div class="space_10 top center_text"><button onclick="fnSaveToWaitlist(); return false;">재입고 알람 신청</button></div>
-                                            </div>    
-                                            <div>품절 상품 중 재입고가 된 상품에 한해  신청하신 이메일로 재입고 알림  메일을 발송해드립니다.   모든 상품이 재입고 되지 않을 수 있으며,  재입고 알림 후 인기 상품은 조기 품절될 수 있습니다.</div>
-                                        </div>
-                                        <!-- Fast Track Result -->
-                                        <div class="column span_16_of_16 space_20 bottom" id="fastTrack_confirm" style="display:none">
-                                            <div class="highlight result">
-                                                <div class="space_10 bottom bar_underline">재입고 알람 신청이 완료되었습니다. 선택하신 옵션의 상품이 재입고되면 등록하신 메일과 핸드폰 번호로 알려드리겠습니다.</div>
-                                                <div class="space_5 bottom"><strong>Color</strong> : <span id="resultSelectedColorName"></span></div>
-                                                <div class="space_20 bottom"><strong>Size</strong> : <span id="resultSelectedSizeName"></span></div>
-                                            </div>
-                                            <div class="space_20 bottom">신청 하신 모든 상품이 재입고 되지 않을 수 있으며,  재입고 알림 후 인기 상품은 조기 품절될 수 있습니다.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- //2016.03.16 코드 수정 (saeyoung.r)?: divNotifyMe() 제거 -->         
-                            </div>
-                            <!-- popup : End -->
-                            <!-- Item Description -->
-                            <div class="column span_7_of_16 pdp_description float_right">
-                                <div class="description_wrapper">
-                                    <section class="ac-container">
-                                        <div>
-                                            <input id="ac-detial" name="ac-detail" type="checkbox" checked="">
-                                            <label for="ac-detial" id="ac-title">상품 상세정보</label>
-                                            <article class="ac-small">                        
-                                                <div class="productInfo typeQuick">
-                                                    <!-- ## 01. 상품설명 -->
-                                                    
-                                                    <div class="itemdetailcontent" style="margin-right:1%">
-                                                        <p>- 플로럴 레이스 트리밍으로 포인트를 준 심리스&nbsp;브라렛입니다.</p>
-                                                        <p>- V 네크라인이며, 헴라인에는 밴딩 처리가 되어 있습니다.</p>
-                                                        <p>- FABRIC : (겉감) 나일론 90%, 스판덱스 10%, (겉감2) 나일론 86%, 스판덱스 14%</p>
-                                                        <p>- 모델 신장 : 162.5cm, 착용 사이즈 : S</p>
-                                                        <p>- 세탁법 : 세탁기 세탁, 찬물 세탁</p>
-                                                        <!-- ## 02. 소재정보 --> 
-                                                    </div> 
-                                                    <!-- ## 03. 반품불가 -->
-                                                    <div></div>
-                                                    <br>     
-                                                    <!-- ## 06. 상품 실측 사이즈 -->
-                                                    <div><strong>상품 실측 사이즈 (cm)</strong></div>
-                                                    <table class="tablearea typewidth"><colgroup><col style="width:35%"><col style="width:*"></colgroup><tbody><tr><th class="al">기 준</th><td class="al"><span>S/M</span><span>M/L</span></td></tr><tr class=""><th class="al">가슴둘레</th><td class="al"><span>64</span><span>72</span></td></tr><tr class=""><th class="al">총길이</th><td class="al"><span>27</span><span>28</span></td></tr></tbody></table>
-                                                    
-                                                    <div class="itemdetailcontent"><p>소재의 특성과 재는 위치에 따라 1~3cm정도의 오차가 있을 수 있습니다.</p></div>
-                        
-                                                        <!-- ## 09. 모델사이즈 -->
-                                                                        
-                                                        <!-- ## 10. 상품코드 -->
-                                                        <div class="iteminfoetc"><strong>상품코드</strong>&nbsp;<span id="itemcodeinfo">1000325797</span></div>
-                                                
-                                                    <!-- ## 04. 취급시 유의사항 (팝업) --><!-- ## 05. 상품 기본정보 (팝업) -->
-                                                    <div class="itemdetailinfo">
-                                                        <div class="itemdetailinfo_left"><a href="javascript:fnShowItemDetail('wash','1000325797','bestseller_all_clothing');">취급시 유의 사항</a></div>
-                                                        <div class="itemdetailinfo_right"><a href="javascript:fnShowItemDetail('basic','1000325797','bestseller_all_clothing');">상품 기본정보</a></div>
-                                                    </div>  
-                                                    <!-- ## 07. 사이즈 측정방법 (팝업) --><!-- ## 08. 미국/한국사이즈 조건표 (팝업) -->
-                                                    <div class="itemdetailinfo">
-                                                        <div class="itemdetailinfo_left"><a href="javascript:fnShowItemDetail('sizeimg','1000325797','bestseller_all_clothing');">사이즈 측정방법</a></div>
-                                                        <div class="itemdetailinfo_right"><a href="javascript:fnShowSizechart('f21','bestseller_all_clothing');">미국/한국 사이즈 조견표</a></div>
-                                                    </div>    
-                                                    
-                                                </div>
-                                            </article>
-                                        </div>
-                                    </section>
-                                </div>
-                                <div class="btn_wrapper space"><input type="button" class="outline center_text" onclick="javascript:fnViewFullDetail('f21','bestseller_all_clothing','1000325797'); return false;" value="상품 상세보기"></div>
-                            </div>  
-                            <!-- Right Content End -->
-                        </form>
-                    </div>
-                </div>
-
-            </div>
+            <!-- 20190722 S -->  
         </div>
     </main>
     <!-- Main End -->

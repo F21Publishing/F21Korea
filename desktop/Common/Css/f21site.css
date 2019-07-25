@@ -1,4 +1,4 @@
-﻿/* Korea Desktop 05/28/2019 Version 1 */
+﻿/* Korea Desktop 07/23/2019 Version 1 */
 
 *,
 *:before,
@@ -1330,6 +1330,10 @@ figcaption {
 
 .bt_gray {
     border-top: 1px solid #ddd
+}
+
+.bt_black {
+    border-top:2px solid #111
 }
 
 .space_0 {
@@ -12321,7 +12325,18 @@ span[class^="star_"] {
 .star_half {
     background: url(/images/en/common/star_half.png) no-repeat center center;
 }
-
+.ad_fix {
+    position: fixed;
+    min-width: 250px;
+    /*padding: 1em;*/
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999999;
+}
+.ad_fix img {
+    width: 120px;
+    height: 120px;
+}
 
 @media screen and (min-width:767px) {
     .container {
