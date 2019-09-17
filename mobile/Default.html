@@ -1075,30 +1075,53 @@
 
     <!-- Popup : Start -->
     <!-- s:등록  -->
+    <script>
+/*이게 더 좋은 소스
+        $(document).ready(function(){              
+            $(window).resize(function (){
+            var height = window.outerHeight;
+                if (height <= 600) {
+                    
+                    $('.signup_img img').css('display','none');
+                }
+                else if(height >= 600){
+                   
+                $('.signup_img img').css('display','block');
+                }
+            })
+        });*/
+ 
+    </script>
  <style>
-     body, #HasSearch{
-        overflow-y: hidden;
-     }
-     .signup_slider{
-        height:100%;
-     }
-    .signup_img {
-        height:150%;
-        overflow-y: scroll !important;
-    }
-    .signup_img img{
-        
-        position: fixed;
-        bottom:45px;
-        overflow-y: scroll !important;
+    
 
-    }
-     @media only screen and (min-width:363px) and (max-width: 500px) {
+     @media only screen and (min-width:363px) and (max-width: 767px) {
+        body, #HasSearch{
+            overflow-y: hidden; /* 561*436 */
+        }
+        .signup_slider{
+            height:436px;
+        }
+        .signup_img {
+            position: absolute;
+            bottom:40px;
+            height: 70%;
+            overflow: auto !important;
+            overflow-y: scroll !important;
+        }
+        .signup_img img{
+            display:flex;
+            bottom:40px;
+            overflow: auto !important;
+            overflow-y: scroll !important;
+        }
     }
  </style>
-    <div class="signup_slider" style="display:block;">
+    <div class="signup_slider" style="display:block;"><!-- style="display:block;position:relative"-->
         <div class="closeIcon" href="#"></div>
-        <div class="signup_img"><img src="http://img.forever21.co.kr/images/signup/MOBILE_EARLY2.gif_20190723084413930.gif" alt="JP_mobile_popup.jpg" /></div>
+        <div class="signup_img" style=""><!-- -->
+            <img src="http://img.forever21.co.kr/images/signup/MOBILE_EARLY2.gif_20190723084413930.gif" alt="Ko_mobile_popup.jpg" />
+        </div>
         <fieldset>
             <input type="text" class="text" placeholder="enter your email address" />
             <button type="button" id="mobileOptinSubscribe">SIGN UP</button>

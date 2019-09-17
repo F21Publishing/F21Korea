@@ -1,5 +1,5 @@
 ﻿@charset "UTF-8";
-/* Korea mobile 07/25/2019 Version 1 */
+/* Korea mobile 09/17/2019 Version 1 */
 /* ================================= */
 /* Reset Code                        */
 /*================================== */
@@ -2333,7 +2333,7 @@ span[class^="c_"] {
     padding: .4em 0;
     position: relative;
     z-index: 5;
-    font-family: "Trade Gothic W01 Roman", "Arial", "Helvetica", sans-serif
+    font-family: "Arial", "Helvetica", sans-serif/* "Trade Gothic W01 Roman",*/
 }
 .gkicker_wrapper {
     width: 100%;
@@ -7329,7 +7329,7 @@ button.shopitall {
 }
 
 .sd_price {
-    font-family: "Trade Gothic W01 Roman";
+    /*font-family: "Trade Gothic W01 Roman";*/
     font-size: 16px;
     color: #111;
     position: absolute;
@@ -7413,7 +7413,7 @@ button.shopitall {
 }
 
 .oops_msg {
-    font-family: "Trade Gothic W01 Roman";
+    /*font-family: "Trade Gothic W01 Roman";*/
     position: absolute;
     top: 5%;
     padding: 0 8%
@@ -7579,7 +7579,7 @@ button.shopitall {
     text-align: center;
     margin: 5px 0;
     font-size: 16px;
-    font-family: "Trade Gothic W01 Cn_18", "arial", "hevetica", sans-serif;
+    font-family: "arial", "hevetica", sans-serif; /*"Trade Gothic W01 Cn_18", */
     letter-spacing: 1px
 }
 
@@ -7809,12 +7809,12 @@ button.shopitall {
     font-size: 3.8rem;
     line-height: 3.7rem;
     text-align: center;
-    font-family: "Trade Gothic W01 BoldCn_20", Arial, Helvetica, Sans-Serif
+    font-family:Arial, Helvetica, Sans-Serif /* "Trade Gothic W01 BoldCn_20", */
 }
 
 .signup_slider .subtitle {
     font-size: .75rem;
-    font-family: "Trade Gothic W01 Roman", Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* "Trade Gothic W01 Roman", */
     text-align: center;
     padding: 10px 0
 }
@@ -7909,7 +7909,7 @@ button.shopitall {
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    font-family: "Avenir Next W06", Arial, Helvetica, sans-serif;
+    font-family:  Arial, Helvetica, sans-serif; /*"Avenir Next W06",*/
     font-weight: bold;
     padding: 2%
 }
@@ -8588,7 +8588,7 @@ main#PDP {
 
 .d_wrapper {
     padding: 5px 0;
-    font-family: arial, helvetica, san-serif;
+    font-family: arial, helvetica, sans-serif;
     font-size: 12px;
 }
 
